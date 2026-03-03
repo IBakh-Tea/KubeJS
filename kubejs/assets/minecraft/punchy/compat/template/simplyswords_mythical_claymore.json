@@ -1,0 +1,57 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_mythical_claymore",
+      "items": [
+        "simplyswords:righteous_relic",
+        "simplyswords:dormant_relic",
+        "simplyswords:brimstone_claymore",
+        "simplyswords:watcher_claymore",
+        "simplyswords:twisted_blade",
+        "simplyswords:shadowsting",
+        "simplyswords:waxweaver",
+        "simplyswords:tainted_relic",
+        "simplyswords:waking_lichblade",
+        "simplyswords:sunfire",
+        "simplyswords:enigma",
+        "simplyswords:awakened_lichblade",
+        "simplyswords:slumbering_lichblade",
+        "simplyswords:harbinger"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_mythical_claymore": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.05
+        }
+      }
+    }
+  }
+}

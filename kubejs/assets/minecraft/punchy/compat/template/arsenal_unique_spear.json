@@ -1,0 +1,49 @@
+{
+  "customGroups": [
+    {
+      "name": "arsenal_unique_spear",
+      "items": [
+        "arsenal:unique_spear_1",
+        "arsenal:unique_spear_sw",
+        "arsenal:unique_spear_2"
+      ]
+    }
+  ],
+  "item": {
+    "arsenal_unique_spear": {
+      "kind": "SPEAR",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_3": "attack_spear"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_forward"
+        },
+        {
+          "type": "useItem",
+          "name": "throw_item"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.01,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.01,
+          "offY": 0.6
+        }
+      }
+    }
+  }
+}

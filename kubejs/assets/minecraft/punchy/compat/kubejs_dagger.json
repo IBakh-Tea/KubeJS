@@ -1,0 +1,67 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_dagger",
+      "items": [
+        "kubejs:oak_iron_dagger",
+        "kubejs:spruce_iron_dagger",
+        "kubejs:birch_iron_dagger",
+        "kubejs:jungle_iron_dagger",
+        "kubejs:acacia_iron_dagger",
+        "kubejs:dark_oak_iron_dagger",
+        "kubejs:mangrove_iron_dagger",
+        "kubejs:bamboo_iron_dagger",
+        "kubejs:cherry_iron_dagger",
+        "kubejs:crimson_iron_dagger",
+        "kubejs:warped_iron_dagger"
+      ]
+    }
+  ],
+
+  "item": {
+    "kubejs_dagger": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_2",
+          "attack_5": "attack_3"
+        }
+      ],
+
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

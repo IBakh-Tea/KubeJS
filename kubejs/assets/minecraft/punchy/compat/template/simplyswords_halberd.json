@@ -1,0 +1,48 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_halberd",
+      "items": [
+        "simplyswords:iron_halberd",
+        "simplyswords:gold_halberd",
+        "simplyswords:diamond_halberd",
+        "simplyswords:netherite_halberd",
+        "simplyswords:runic_halberd"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_halberd": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": -0.065,
+          "offY": 0.05
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "customGroups": [
+    {
+      "name": "death_knights_runeaxe",
+      "items": [
+"death_knights:great_netherite_runeaxe",
+"death_knights:great_diamond_runeaxe",
+"death_knights:great_aeternium_runeaxe",
+"death_knights:great_iron_runeaxe"
+
+
+
+
+      ]
+    }
+  ],
+  "item": {
+    "death_knights_runeaxe": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+             "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+            },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

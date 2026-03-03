@@ -1,0 +1,53 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_mace",
+      "items": [
+        "kubejs:oak_iron_mace",
+        "kubejs:spruce_iron_mace",
+        "kubejs:birch_iron_mace",
+        "kubejs:jungle_iron_mace",
+        "kubejs:acacia_iron_mace",
+        "kubejs:dark_oak_iron_mace",
+        "kubejs:mangrove_iron_mace",
+        "kubejs:bamboo_iron_mace",
+        "kubejs:cherry_iron_mace",
+        "kubejs:crimson_iron_mace",
+        "kubejs:warped_iron_mace"
+      ]
+    }
+  ],
+  "item": {
+    "kubejs_mace": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.03
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.03
+        }
+      }
+    }
+  }
+}

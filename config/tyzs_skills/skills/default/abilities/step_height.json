@@ -1,0 +1,24 @@
+{
+  "active": true,
+  "id": "step_height",
+  "maximumLevel": 3,
+  "prices": [
+    2,
+    2,
+    3
+  ],
+  "values": [
+    0.5,
+    1.0,
+    1.5
+  ],
+  "type": "GENERIC",
+  "category": "ABILITIES",
+  "modifier": "minecraft:generic.step_height",
+  "operation": "ADD_VALUE",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/step_height.png",
+  "displayName": "skill.tyzs_skills.step_height.displayName",
+  "description": "skill.tyzs_skills.step_height.description",
+  "unit": "skill.tyzs_skills.unit.blocks"
+}

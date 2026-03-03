@@ -1,0 +1,45 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_dperforiscus",
+      "items": [
+        "simplymore:perforiscus"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_dperforiscus": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.15,
+          "offY": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.01,
+          "offY": 0.23
+        }
+      }
+    }
+  }
+}

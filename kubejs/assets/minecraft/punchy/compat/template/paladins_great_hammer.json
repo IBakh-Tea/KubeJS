@@ -1,0 +1,50 @@
+{
+  "customGroups": [
+    {
+      "name": "paladins_great_hammer",
+      "items": [
+    "paladins:iron_great_hammer",
+"paladins:stone_great_hammer",
+"paladins:golden_great_hammer",
+"paladins:diamond_great_hammer",
+"paladins:netherite_great_hammer",
+"paladins:aeternium_great_hammer",
+"paladins:wooden_great_hammer"
+
+      ]
+    }
+  ],
+  "item": {
+    "paladins_great_hammer": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_mace",
+          "var_2": "attack_mace",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

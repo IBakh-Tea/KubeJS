@@ -1,0 +1,27 @@
+{
+  "active": true,
+  "id": "rage",
+  "maximumLevel": 5,
+  "prices": [
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "values": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "type": "IMMUTABLE",
+  "category": "FIGHT",
+  "modifier": "",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/rage.png",
+  "displayName": "skill.tyzs_skills.rage.displayName",
+  "description": "skill.tyzs_skills.rage.description",
+  "unit": "skill.tyzs_skills.unit.percentage"
+}

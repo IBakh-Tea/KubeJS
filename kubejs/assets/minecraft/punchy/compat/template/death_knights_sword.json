@@ -1,0 +1,61 @@
+{
+  "customGroups": [
+    {
+      "name": "death_knights_sword",
+      "items": [
+"death_knights:netherite_runeblade",
+"death_knights:diamond_runeblade",
+"death_knights:great_aeternium_runeblade",
+"death_knights:initiate_runeblade",
+"death_knights:great_netherite_runeblade",
+"death_knights:great_iron_runeblade",
+"death_knights:great_diamond_runeblade"
+
+
+
+      ]
+    }
+  ],
+  "item": {
+     "death_knights_sword": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+             "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+           "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+            },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_3"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

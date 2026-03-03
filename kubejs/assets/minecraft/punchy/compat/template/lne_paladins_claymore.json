@@ -1,0 +1,46 @@
+{
+  "customGroups": [
+    {
+      "name": "lne_paladins_claymore",
+      "items": [
+"lne_paladins:elder_guardian_claymore",
+"lne_paladins:wither_claymore",
+"lne_paladins:glacial_claymore",
+"lne_paladins:ender_dragon_claymore"
+
+
+      ]
+    }
+  ],
+  "item": {
+    "lne_paladins_claymore": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+             "var_2": "attack_2",
+                "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0
+        },
+        "left": {
+          "scale": 1.0
+        }
+      }
+    }
+  }
+}

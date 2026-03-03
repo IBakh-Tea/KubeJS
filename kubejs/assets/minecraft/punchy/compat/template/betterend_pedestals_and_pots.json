@@ -1,0 +1,83 @@
+{
+  "customGroups": [
+    {
+      "name": "betterend_pedestals_and_pots",
+      "items": [
+        "betterend:azure_jadestone_pedestal",
+        "betterend:umbralith_pedestal",
+        "betterend:granite_pedestal",
+        "betterend:diorite_pedestal",
+        "betterend:andesite_pedestal",
+        "betterend:infusion_pedestal",
+        "betterend:eternal_pedestal",
+        "betterend:virid_jadestone_pedestal",
+        "betterend:flavolite_pedestal",
+        "betterend:quartz_pedestal",
+        "betterend:sulphuric_rock_pedestal",
+        "betterend:violecite_pedestal",
+        "betterend:sandy_jadestone_pedestal",
+        "betterend:purpur_pedestal",
+
+        "betterend:azure_jadestone_flower_pot",
+        "betterend:violecite_flower_pot",
+        "betterend:umbralith_flower_pot",
+        "betterend:virid_jadestone_flower_pot",
+        "betterend:sandy_jadestone_flower_pot",
+        "betterend:endstone_flower_pot",
+        "betterend:flavolite_flower_pot",
+        "betterend:sulphuric_rock_flower_pot",
+
+        "betterend:hydrothermal_vent",
+
+        "betterend:tenanea_bar_stool",
+"betterend:helix_tree_taburet",
+"betterend:helix_tree_bar_stool",
+"betterend:helix_tree_chair",
+"betterend:lucernia_bar_stool",
+"betterend:lucernia_taburet",
+"betterend:lucernia_chair",
+"betterend:jellyshroom_chair",
+"betterend:jellyshroom_bar_stool",
+"betterend:mossy_glowshroom_bar_stool",
+"betterend:mossy_glowshroom_taburet",
+"betterend:mossy_glowshroom_chair",
+"betterend:pythadendron_taburet",
+"betterend:dragon_tree_taburet",
+"betterend:pythadendron_chair",
+"betterend:tenanea_taburet",
+"betterend:pythadendron_bar_stool",
+"betterend:end_lotus_chair",
+"betterend:jellyshroom_taburet",
+"betterend:tenanea_chair",
+"betterend:end_lotus_taburet",
+"betterend:umbrella_tree_taburet",
+"betterend:umbrella_tree_bar_stool",
+"betterend:end_lotus_bar_stool",
+"betterend:lacugrove_taburet",
+"betterend:lacugrove_bar_stool",
+"betterend:lacugrove_chair",
+"betterend:dragon_tree_bar_stool",
+"betterend:dragon_tree_chair",
+"betterend:umbrella_tree_chair"
+
+      ]
+    }
+  ],
+
+  "item": {
+    "betterend_pedestals_and_pots": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.23
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.23
+        }
+      }
+    }
+  }
+}

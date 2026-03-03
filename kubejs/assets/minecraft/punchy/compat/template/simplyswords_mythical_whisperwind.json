@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_mythical_whisperwind",
+      "items": [
+        "simplyswords:whisperwind"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_mythical_whisperwind": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.05
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_backhand_blade_1mithycal",
+      "items": [
+        "simplymore:iron_backhand_blade",
+        "simplymore:gold_backhand_blade",
+        "simplymore:diamond_backhand_blade",
+        "simplymore:netherite_backhand_blade",
+        "simplymore:runic_backhand_blade",
+        "simplymore:boas_fang",
+        "simplymore:mimicry_backhand_blade"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_backhand_blade_1mithycal": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_1",
+          "attack_3": "attack_1",
+          "attack_4": "attack_1",
+          "attack_5": "attack_6",
+          "attack_6": "attack_6"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.4,
+          "offX": -0.09,
+          "offY": -0.17,
+          "offZ": 0.15,
+          "rotX": 10.0,
+          "rotZ": -170.0
+        },
+        "left": {
+          "scale": 1.4,
+          "offX": 0.09,
+          "offY": -0.17,
+          "offZ": 0.15,
+          "rotX": 10.0,
+          "rotZ": 170.0
+        }
+      },
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": -90.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21000002,
+          "offZ": -0.09999999,
+          "rotX": -23.0,
+          "rotY": 90.0,
+          "rotZ": -1.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      }
+    }
+  }
+}

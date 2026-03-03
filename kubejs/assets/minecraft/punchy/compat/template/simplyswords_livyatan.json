@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_livyatan",
+      "items": [
+        "simplyswords:livyatan"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_livyatan": {
+      "kind": "AXE",
+      "armKind": "AXE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.032,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.072,
+          "offY": 0.1
+        }
+      }
+    }
+  }
+}

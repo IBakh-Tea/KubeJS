@@ -1,0 +1,56 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_khopesh1",
+      "items": [
+        "simplymore:iron_khopesh",
+        "simplymore:gold_khopesh",
+        "simplymore:diamond_khopesh",
+        "simplymore:netherite_khopesh",
+        "simplymore:runic_khopesh",
+        "simplymore:myrmedge",
+        "simplymore:mimicry_khopesh"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_khopesh1": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.2,
+          "rotX": 20.0,
+          "offZ": 0.2,
+          "offY": 0.21,
+          "offX": -0.05,
+          "rotY": -180.0
+        },
+        "left": {
+          "scale": 1.2,
+          "rotX": 20.0,
+          "offZ": 0.2,
+          "offY": 0.2,
+          "offX": 0.05,
+          "rotY": 180.0
+        }
+      }
+    }
+  }
+}

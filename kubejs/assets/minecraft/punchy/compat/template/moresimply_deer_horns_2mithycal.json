@@ -1,0 +1,54 @@
+{
+  "customGroups": [
+    {
+      "name": "simplymore_deer_horns_2mithycal",
+      "items": [
+        "simplymore:iron_deer_horns",
+        "simplymore:gold_deer_horns",
+        "simplymore:diamond_deer_horns",
+        "simplymore:netherite_deer_horns",
+        "simplymore:runic_deer_horns",
+        "simplymore:tidebreaker",
+        "simplymore:brassturn",
+        "simplymore:mimicry_deer_horns"
+      ]
+    }
+  ],
+  "item": {
+    "simplymore_deer_horns_2mithycal": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.3,
+          "rotX": -40.0,
+          "offZ": 0.1,
+          "offY": -0.06
+        },
+        "left": {
+          "scale": 1.3,
+          "rotX": -40.0,
+          "offZ": 0.1,
+          "offY": -0.06
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "customGroups": [
+    {
+      "name": "dungeonnowloading_vertex_bow",
+      "items": [
+        "dungeonnowloading:vertex_bow"
+      ]
+    }
+  ],
+
+  "item": {
+    "dungeonnowloading_vertex_bow": {
+      "kind": "BOW",
+      "armKind": "BOW",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": -0.07,
+          "offY": -0.25,
+          "offZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.0,
+          "offZ": 0.0
+        }
+      }
+    }
+  }
+}

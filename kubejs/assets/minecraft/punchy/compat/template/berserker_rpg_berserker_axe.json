@@ -1,0 +1,66 @@
+{
+  "customGroups": [
+    {
+      "name": "berserker_rpg_berserker_axe",
+      "items": [
+        "berserker_rpg:ender_dragon_berserker_axe",
+        "berserker_rpg:soul_berserker_axe",
+        "berserker_rpg:frozen_berserker_axe",
+        "berserker_rpg:elder_guardian_berserker_axe",
+        "berserker_rpg:aeternium_berserker_axe",
+"berserker_rpg:flint_berserker_axe",
+"berserker_rpg:diamond_berserker_axe",
+"berserker_rpg:thunder_berserker_axe",
+"berserker_rpg:stone_berserker_axe",
+"berserker_rpg:netherite_berserker_axe",
+"berserker_rpg:iron_berserker_axe",
+"berserker_rpg:golden_berserker_axe"
+
+      ]
+    }
+  ],
+
+  "item": {
+    "berserker_rpg_berserker_axe": {
+      "kind": "AXE",
+      "armKind": "AXE",
+
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_4"
+        }
+      ],
+
+      "transforms": {
+        "right": {
+          "scale": 1.1
+        },
+        "left": {
+          "scale": 1.1
+        }
+      }
+    }
+  }
+}

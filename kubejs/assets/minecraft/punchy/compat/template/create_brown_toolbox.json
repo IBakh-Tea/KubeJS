@@ -1,0 +1,74 @@
+{
+  "customGroups": [
+    {
+      "name": "create_brown_toolbox",
+      "items": [
+        "create:brown_toolbox",
+        "create:light_gray_toolbox",
+"create:gray_toolbox",
+"create:pink_toolbox",
+"create:lime_toolbox",
+"create:yellow_toolbox",
+"create:light_blue_toolbox",
+"create:magenta_toolbox",
+"create:orange_toolbox",
+"create:white_toolbox",
+"create:cyan_toolbox",
+"create:purple_toolbox",
+"create:blue_toolbox",
+"create:green_toolbox",
+"create:red_toolbox",
+"create:black_toolbox"
+
+      ]
+    }
+  ],
+
+  "item": {
+   "create_brown_toolbox": {
+      "kind": "LANTERN",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.3,
+          "rotX": 5.0,
+          "offZ": 0.1
+
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.05,
+          "rotX": 5.0,
+          "offY": -0.3,
+          "offZ": 0.1
+        }
+      },
+
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+           "offY": 0.2,
+           "rotX": -15.0
+        },
+        "left": {
+          "scale": 1.0,
+           "offY": 0.2,
+           "rotX": -15.0
+        }
+      },
+
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.0,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ]
+    }
+  }
+}

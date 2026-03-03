@@ -1,0 +1,45 @@
+{
+  "customGroups": [
+    {
+      "name": "arsenal_unique_double_axe",
+      "items": [
+        "arsenal:unique_double_axe_1",
+        "arsenal:unique_double_axe_2",
+        "arsenal:unique_double_axe_sw"
+      ]
+    }
+  ],
+  "item": {
+    "arsenal_unique_double_axe": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "ttack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "customGroups": [
+    {
+      "name": "paladins_holy_wand",
+      "items": [
+   "paladins:acolyte_wand",
+ "paladins:holy_wand",
+"paladins:diamond_holy_wand",
+"paladins:netherite_holy_wand"
+
+      ]
+    }
+  ],
+  "item": {
+    "paladins_holy_wand": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_3"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

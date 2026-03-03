@@ -1,0 +1,52 @@
+{
+  "customGroups": [
+    {
+      "name": "artificers_pike",
+      "items": [
+"artificers:netherite_pike",
+"artificers:aeternium_pike",
+"artificers:diamond_pike",
+"artificers:iron_pike",
+"artificers:golden_pike",
+"artificers:stone_pike"
+
+      ]
+    }
+  ],
+  "item": {
+    "artificers_pike": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_3": "attack_spear",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

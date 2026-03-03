@@ -1,0 +1,29 @@
+{
+  "customGroups": [
+    {
+      "name": "minecells_crossbows",
+      "items": [
+        "minecells:explosive_crossbow",
+        "minecells:heavy_crossbow"
+      ]
+    }
+  ],
+
+  "item": {
+    "minecells_crossbows": {
+      "kind": "CROSSBOW",
+      "armKind": "CROSSBOW",
+      "customAnimation": [
+  
+        {
+          "type": "useItem",
+          "name": "use_crossbow"
+        }
+      ],
+      "transforms": {
+        "right": { "scale": 1.0,  "offY": 0.03 },
+        "left": { "scale": 1.0,   "offY": 0.03 }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "kubejs:item/base/bow",
+  "textures": {
+    "layer0": "kubejs:item/bow/string_0",
+    "layer1": "kubejs:item/bow/stave_0",
+    "layer2": "kubejs:item/bow/arrow_1"
+  }
+}

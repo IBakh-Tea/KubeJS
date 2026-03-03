@@ -1,0 +1,37 @@
+{
+  "customGroups": [
+    {
+      "name": "dungeonnowloading_mendstone_pickaxe",
+      "items": [
+        "dungeonnowloading:mendstone_pickaxe"
+      ]
+    }
+  ],
+
+  "item": {
+    "PICKAXE": {
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0
+        },
+        "left": {
+          "scale": 1.0
+        }
+      }
+    }
+  },
+
+  "itemSpecific": {
+    "dungeonnowloading:mendstone_pickaxe": {
+      "kind": "PICKAXE",
+      "armKind": "PICKAXE"
+    }
+  }
+}

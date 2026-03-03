@@ -1,0 +1,47 @@
+{
+  "customGroups": [
+    {
+      "name": "create_wrench",
+      "items": [
+       "create:wrench"
+      ]
+    }
+  ],
+  "item": {
+     "create_wrench": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+           "var_1": "attack_1",
+            "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.2,
+          "offZ": 0.1,
+          "offX": 0.04,
+          "rotX": 20.0,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.2,
+          "offZ": 0.1,
+          "offY": 0.1,
+              "rotX": 20.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "customGroups": [
+    {
+      "name": "nethersdelight_golden_machete",
+      "items": [
+   "nethersdelight:iron_machete",
+"nethersdelight:golden_machete",
+"nethersdelight:diamond_machete",
+"nethersdelight:netherite_machete"
+      ]
+    }
+  ],
+  "item": {
+    "nethersdelight_golden_machete": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_forward"
+        },
+        {
+          "type": "useItem",
+          "name": "throw_item"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_2"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.02
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.02
+        }
+      }
+    }
+  }
+}

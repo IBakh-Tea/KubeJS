@@ -1,0 +1,19 @@
+{
+  "powerWeight": 4,
+  "active": true,
+  "id": "refiner",
+  "maximumLevel": 1,
+  "prices": [
+    35
+  ],
+  "values": [],
+  "type": "TRAIT",
+  "category": "TRAITS",
+  "modifier": "",
+  "operation": "ADD_VALUE",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/refiner.png",
+  "displayName": "skill.tyzs_skills.refiner.displayName",
+  "description": "skill.tyzs_skills.refiner.description",
+  "unit": ""
+}

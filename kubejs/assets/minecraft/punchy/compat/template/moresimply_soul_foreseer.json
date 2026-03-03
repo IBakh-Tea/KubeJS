@@ -1,0 +1,45 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_soul_foreseer",
+      "items": [
+        "simplymore:soul_foreseer"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_soul_foreseer": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": -0.04,
+          "offY": 0.23
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.06,
+          "offY": 0.8
+        }
+      }
+    }
+  }
+}

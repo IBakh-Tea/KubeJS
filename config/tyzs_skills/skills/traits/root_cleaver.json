@@ -1,0 +1,19 @@
+{
+  "powerWeight": 3,
+  "active": true,
+  "id": "root_cleaver",
+  "maximumLevel": 1,
+  "prices": [
+    25
+  ],
+  "values": [],
+  "type": "TRAIT",
+  "category": "TRAITS",
+  "modifier": "",
+  "operation": "ADD_VALUE",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/root_cleaver.png",
+  "displayName": "skill.tyzs_skills.root_cleaver.displayName",
+  "description": "skill.tyzs_skills.root_cleaver.description",
+  "unit": ""
+}

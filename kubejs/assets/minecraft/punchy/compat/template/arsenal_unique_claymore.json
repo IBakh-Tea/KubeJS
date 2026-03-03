@@ -1,0 +1,46 @@
+{
+  "customGroups": [
+    {
+      "name": "arsenal_unique_claymore",
+      "items": [
+        "arsenal:unique_claymore_sw",
+        "arsenal:unique_claymore_1",
+        "arsenal:unique_claymore_2"
+      ]
+    }
+  ],
+  "item": {
+    "arsenal_unique_claymore": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_3",
+          "var_3": "attack_mace",
+          "critical_hit": "ttack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

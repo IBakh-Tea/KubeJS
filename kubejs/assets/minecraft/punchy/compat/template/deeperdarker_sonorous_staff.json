@@ -1,0 +1,55 @@
+{
+  "customGroups": [
+    {
+      "name": "deeperdarker_sonorous_staff",
+      "items": [
+        "deeperdarker:sonorous_staff"
+      ]
+    }
+  ],
+  "item": {
+    "deeperdarker_sonorous_staff": {
+      "kind": "SPEAR",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_spear"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 2.0,
+          "offX": 0.27,
+           "offY": -0.1,
+           "offZ": 0.1,
+   
+            "rotX": 30.0,
+            "rotY": 90.0
+        },
+        "left": {
+          "scale": 2.0,
+          "offX": 0.24,
+           "offZ": 0.05,
+          "offY": -0.1,
+    
+          "rotX": 30.0,
+           "rotY": 90.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_timekeeper",
+      "items": [
+        "simplymore:timekeeper"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_timekeeper": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.04,
+          "rotX": -20.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.04,
+          "rotX": -20.0
+        }
+      }
+    }
+  }
+}

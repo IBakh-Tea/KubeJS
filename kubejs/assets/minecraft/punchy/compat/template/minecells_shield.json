@@ -1,0 +1,33 @@
+{
+  "customGroups": [
+    {
+      "name": "minecells_shields",
+      "items": [
+        "minecells:bloodthirsty_shield",
+        "minecells:assault_shield",
+        "minecells:greed_shield",
+        "minecells:ice_shield",
+        "minecells:rampart",
+        "minecells:cudgel"
+      ]
+    }
+  ],
+
+  "item": {
+    "minecells_shields": {
+      "kind": "SHIELD",
+      "armKind": "SHIELD",
+      "customAnimation": [
+  
+        {
+          "type": "useItem",
+          "name": "use_shield"
+        }
+      ],
+      "transforms": {
+        "right": { "scale": 1.0 },
+        "left": { "scale": 1.0 }
+      }
+    }
+  }
+}

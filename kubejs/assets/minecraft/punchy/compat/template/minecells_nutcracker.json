@@ -1,0 +1,42 @@
+{
+  "customGroups": [
+    {
+      "name": "minecells_nutcracker",
+      "items": [
+        "minecells:nutcracker"
+      ]
+    }
+  ],
+  "item": {
+    "minecells_nutcracker": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

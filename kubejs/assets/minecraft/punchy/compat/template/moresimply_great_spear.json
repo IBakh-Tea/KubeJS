@@ -1,0 +1,52 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_great_spear",
+      "items": [
+        "simplymore:iron_great_spear",
+        "simplymore:gold_great_spear",
+        "simplymore:diamond_great_spear",
+        "simplymore:netherite_great_spear",
+        "simplymore:runic_great_spear",
+        "simplymore:mimicry_great_spear"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_great_spear": {
+      "kind": "SPEAR",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_spear"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_forward"
+        },
+        {
+          "type": "useItem",
+          "name": "throw_item"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.08,
+          "offY": -0.2
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": -0.06,
+          "offY": -0.2
+        }
+      }
+    }
+  }
+}

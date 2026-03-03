@@ -1,0 +1,39 @@
+{
+  "customGroups": [
+    {
+      "name": "battle_axes",
+      "items": [
+        "earth-and-water:battle_axe",
+        "earth-and-water:whip"
+      ]
+    }
+  ],
+
+  "item": {
+    "battle_axes": {
+      "kind": "AXE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

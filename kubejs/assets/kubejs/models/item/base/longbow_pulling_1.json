@@ -1,0 +1,8 @@
+{
+  "parent": "kubejs:item/base/longbow",
+  "textures": {
+    "layer0": "kubejs:item/longbow/string_1",
+    "layer1": "kubejs:item/longbow/stave_1",
+    "layer2": "kubejs:item/longbow/arrow_1"
+  }
+}

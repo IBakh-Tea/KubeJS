@@ -1,0 +1,54 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_twinblade",
+      "items": [
+        "kubejs:oak_iron_twinblade",
+        "kubejs:spruce_iron_twinblade",
+        "kubejs:birch_iron_twinblade",
+        "kubejs:jungle_iron_twinblade",
+        "kubejs:acacia_iron_twinblade",
+        "kubejs:dark_oak_iron_twinblade",
+        "kubejs:mangrove_iron_twinblade",
+        "kubejs:bamboo_iron_twinblade",
+        "kubejs:cherry_iron_twinblade",
+        "kubejs:crimson_iron_twinblade",
+        "kubejs:warped_iron_twinblade"
+      ]
+    }
+  ],
+  "item": {
+    "kubejs_twinblade": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.06
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.06
+        }
+      }
+    }
+  }
+}

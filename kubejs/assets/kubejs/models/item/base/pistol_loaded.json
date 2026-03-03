@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:item/base/pistol",
+  "textures": {
+    "layer0": "kubejs:item/pistol/handle",
+    "layer1": "kubejs:item/pistol/barrel_loaded"
+  }
+}

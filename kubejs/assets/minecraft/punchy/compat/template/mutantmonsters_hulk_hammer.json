@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "mutantmonsters_hulk_hammer",
+      "items": [
+        "mutantmonsters:hulk_hammer"
+      ]
+    }
+  ],
+  "item": {
+    "mutantmonsters_hulk_hammer": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.042
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.042,
+          "offX": 0.01
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "customGroups": [
+    {
+      "name": "supplementaries_flute",
+      "items": [
+        "supplementaries:flute"
+      ]
+    }
+  ],
+
+  "item": {
+    "supplementaries_flute": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.5,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.5,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

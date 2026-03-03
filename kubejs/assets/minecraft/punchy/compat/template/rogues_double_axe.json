@@ -1,0 +1,48 @@
+{
+  "customGroups": [
+    {
+      "name": "rogues_double_axe",
+      "items": [
+        "rogues:stone_double_axe",
+        "rogues:iron_double_axe",
+        "rogues:diamond_double_axe",
+        "rogues:netherite_double_axe",
+        "rogues:golden_double_axe",
+        "rogues:aeternium_double_axe"
+      ]
+    }
+  ],
+  "item": {
+    "rogues_double_axe": {
+      "kind": "AXE",
+      "armKind": "AXE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

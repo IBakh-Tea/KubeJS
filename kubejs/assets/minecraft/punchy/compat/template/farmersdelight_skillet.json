@@ -1,0 +1,49 @@
+{
+  "customGroups": [
+    {
+      "name": "farmersdelight_skillet",
+      "items": [
+        "farmersdelight:skillet"
+      ]
+    }
+  ],
+  "item": {
+    "farmersdelight_skillet": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_forward"
+        },
+        {
+          "type": "useItem",
+          "name": "throw_item"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.072,
+          "offY": 0.03
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.072,
+          "offY": 0.03
+        }
+      }
+    }
+  }
+}

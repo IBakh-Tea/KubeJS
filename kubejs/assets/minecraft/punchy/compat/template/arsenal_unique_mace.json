@@ -1,0 +1,45 @@
+{
+  "customGroups": [
+    {
+      "name": "arsenal_unique_mace",
+      "items": [
+        "arsenal:unique_mace_1",
+        "arsenal:unique_mace_sw",
+        "arsenal:unique_mace_2"
+      ]
+    }
+  ],
+  "item": {
+    "arsenal_unique_mace": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

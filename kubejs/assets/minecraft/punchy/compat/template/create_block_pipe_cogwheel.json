@@ -1,0 +1,38 @@
+{
+  "customGroups": [
+    {
+      "name": "create_block_pipe_cogwheel",
+      "items": [
+ "create:fluid_valve",
+"create:fluid_pipe",
+"create:smart_fluid_pipe",
+"create:sail_frame",
+"create:copper_valve_handle",
+"create:cogwheel",
+"create:large_cogwheel"
+
+
+
+
+
+      ]
+    }
+  ],
+
+  "item": {
+  "create_block_pipe_cogwheel": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.1
+        }
+      }
+    }
+  }
+}

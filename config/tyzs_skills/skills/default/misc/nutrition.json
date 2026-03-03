@@ -1,0 +1,27 @@
+{
+  "active": true,
+  "id": "nutrition",
+  "maximumLevel": 5,
+  "prices": [
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "values": [
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    25.0
+  ],
+  "type": "IMMUTABLE",
+  "category": "MISC",
+  "modifier": "",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/nutrition.png",
+  "displayName": "skill.tyzs_skills.nutrition.displayName",
+  "description": "skill.tyzs_skills.nutrition.description",
+  "unit": "skill.tyzs_skills.unit.percentage"
+}

@@ -1,0 +1,56 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_pernach_6mithycal",
+      "items": [
+        "simplymore:iron_pernach",
+        "simplymore:gold_pernach",
+        "simplymore:diamond_pernach",
+        "simplymore:netherite_pernach",
+        "simplymore:runic_pernach",
+        "simplymore:black_pearl",
+        "simplymore:ascended_idol",
+        "simplymore:holylight",
+        "simplymore:darksent",
+        "simplymore:tarnished_idol",
+        "simplymore:matterbane",
+        "simplymore:ruptured_idol",
+        "simplymore:mimicry_pernach"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_pernach_6mithycal": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.052
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.052
+        }
+      }
+    }
+  }
+}

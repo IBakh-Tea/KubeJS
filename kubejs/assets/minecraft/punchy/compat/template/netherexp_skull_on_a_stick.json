@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "netherexp_skull_on_a_stick",
+      "items": [
+        "netherexp:skull_on_a_stick"
+      ]
+    }
+  ],
+
+  "item": {
+    "netherexp_skull_on_a_stick": {
+      "kind": "FISHING_ROD",
+      "armKind": "FISHING_ROD",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.01,
+          "offY": 0.019999985,
+          "offZ": 0.06999999,
+          "rotX": -56.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.10999997,
+          "pivotZ": -0.04
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.01,
+          "offY": 0.019999985,
+          "offZ": 0.06999999,
+          "rotX": -56.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "pivotX": 0.0,
+          "pivotY": 0.10999997,
+          "pivotZ": -0.04
+        }
+      }
+    }
+  }
+}

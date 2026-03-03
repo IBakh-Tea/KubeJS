@@ -1,0 +1,43 @@
+{
+  "customGroups": [
+    {
+      "name": "twilightforest_minotaur_axe",
+      "items": [
+        "twilightforest:diamond_minotaur_axe",
+        "twilightforest:gold_minotaur_axe"
+      ]
+    }
+  ],
+  "item": {
+    "twilightforest_minotaur_axe": {
+      "kind": "AXE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.03
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.03
+        }
+      }
+    }
+  }
+}

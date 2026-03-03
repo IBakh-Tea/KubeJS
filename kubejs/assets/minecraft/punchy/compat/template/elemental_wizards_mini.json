@@ -1,0 +1,55 @@
+{
+  "customGroups": [
+    {
+      "name": "elemental_wizards_mini",
+      "items": [
+"elemental_wizards_rpg:wand_wind",
+"elemental_wizards_rpg:wand_netherite_wind",
+"elemental_wizards_rpg:wand_feather",
+"elemental_wizards_rpg:wand_kelp",
+"elemental_wizards_rpg:wand_netherite_aqua",
+"elemental_wizards_rpg:wand_clay",
+"elemental_wizards_rpg:wand_terra",
+"elemental_wizards_rpg:wand_netherite_terra",
+"elemental_wizards_rpg:wand_aqua"
+
+      ]
+    }
+  ],
+  "item": {
+    "elemental_wizards_mini": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

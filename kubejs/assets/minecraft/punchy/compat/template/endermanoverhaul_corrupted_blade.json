@@ -1,0 +1,55 @@
+{
+  "customGroups": [
+    {
+      "name": "endermanoverhaul_corrupted_blade",
+      "items": [
+   "endermanoverhaul:corrupted_blade"
+      ]
+    }
+  ],
+  "item": {
+     "endermanoverhaul_corrupted_blade": {
+      "kind": "SPEAR",
+      "customAnimation": [
+        {
+             "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+             "var_3": "attack_3",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+            },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_2",
+          "attack_5": "attack_1",
+           "attack_6": "attack_3"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

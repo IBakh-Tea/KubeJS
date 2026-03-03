@@ -1,0 +1,47 @@
+{
+  "customGroups": [
+    {
+      "name": "paladins_mace",
+      "items": [
+   "paladins:iron_mace",
+"paladins:golden_mace",
+"paladins:diamond_mace",
+"paladins:netherite_mace",
+"paladins:aeternium_mace"
+      ]
+    }
+  ],
+  "item": {
+    "paladins_mace": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.03
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.03
+        }
+      }
+    }
+  }
+}

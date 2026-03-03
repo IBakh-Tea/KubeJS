@@ -1,0 +1,34 @@
+{
+  "customGroups": [
+    {
+      "name": "minecells_bows",
+      "items": [
+        "minecells:nerves_of_steel",
+        "minecells:ice_bow",
+        "minecells:infantry_bow",
+        "minecells:multiple_nocks_bow",
+        "minecells:bow_and_endless_quiver",
+        "minecells:marksmans_bow",
+        "minecells:quick_bow"
+      ]
+    }
+  ],
+
+  "item": {
+    "minecells_bows": {
+      "kind": "BOW",
+      "armKind": "BOW",
+      "customAnimation": [
+  
+        {
+          "type": "useItem",
+          "name": "use_bow"
+        }
+      ],
+      "transforms": {
+        "right": { "scale": 1.0 },
+        "left": { "scale": 1.0 }
+      }
+    }
+  }
+}

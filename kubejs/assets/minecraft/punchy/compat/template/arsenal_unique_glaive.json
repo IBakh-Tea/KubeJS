@@ -1,0 +1,46 @@
+{
+  "customGroups": [
+    {
+      "name": "arsenal_unique_glaive",
+      "items": [
+        "arsenal:unique_glaive_2",
+        "arsenal:unique_glaive_1",
+        "arsenal:unique_glaive_sw"
+      ]
+    }
+  ],
+  "item": {
+    "arsenal_unique_glaive": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_mace",
+          "var_2": "attack_mace",
+          "var_3": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": -0.09
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": -0.09
+        }
+      }
+    }
+  }
+}

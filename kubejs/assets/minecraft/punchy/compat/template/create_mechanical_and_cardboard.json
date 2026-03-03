@@ -1,0 +1,36 @@
+{
+  "customGroups": [
+    {
+      "name": "create_mechanical_and_cardboard",
+      "items": [
+"create:cardboard_package_12x12",
+"create:cardboard_package_10x12",
+"create:cardboard_package_10x8",
+"create:cardboard_package_12x10",
+"create:mechanical_arm"
+
+
+
+
+
+      ]
+    }
+  ],
+
+  "item": {
+  "create_mechanical_and_cardboard": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.4
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.4
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_the_blood_harvester",
+      "items": [
+        "simplymore:the_blood_harvester"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_the_blood_harvester": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.15,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.25,
+          "offY": 0.6
+        }
+      }
+    }
+  }
+}

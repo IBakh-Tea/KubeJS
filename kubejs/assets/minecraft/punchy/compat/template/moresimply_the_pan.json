@@ -1,0 +1,46 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_the_pan",
+      "items": [
+        "simplymore:the_pan"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_the_pan": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.3,
+          "offZ": 0.2,
+          "rotY": 70.0,
+          "rotX": -20.0
+        },
+        "left": {
+          "scale": 1.3,
+          "offZ": 0.2,
+          "rotY": -70.0,
+          "rotX": -20.0
+        }
+      }
+    }
+  }
+}

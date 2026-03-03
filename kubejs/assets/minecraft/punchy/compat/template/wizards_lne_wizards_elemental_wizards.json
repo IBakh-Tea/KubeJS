@@ -1,0 +1,73 @@
+{
+  "customGroups": [
+    {
+      "name": "wizards",
+      "items": [
+        "wizards:staff_wizard",
+        "wizards:staff_arcane",
+        "wizards:staff_fire",
+        "wizards:staff_frost",
+        "wizards:staff_netherite_arcane",
+        "wizards:staff_netherite_fire",
+        "wizards:staff_netherite_frost",
+           "wizards:staff_crystal_arcane", 
+        "wizards:staff_smaragdant_frost",
+         "lne_wizards:staff_everfrost",
+        "lne_wizards:staff_arcane_dragon",
+        "lne_wizards:staff_netherflame",
+        "elemental_wizards_rpg:staff_terra",
+"elemental_wizards_rpg:staff_wind",
+"elemental_wizards_rpg:staff_netherite_terra",
+"elemental_wizards_rpg:staff_netherite_wind",
+"elemental_wizards_rpg:staff_crystal_aqua",
+"lne_paladins:sirens_holy_staff",
+"lne_wizards:staff_seismic",
+"lne_wizards:staff_zephyrwing",
+"lne_wizards:staff_tidecaller",
+"elemental_wizards_rpg:staff_aqua",
+"elemental_wizards_rpg:staff_aeternium_wind",
+"elemental_wizards_rpg:staff_elemental",
+"elemental_wizards_rpg:staff_netherite_aqua"
+
+      ]
+    }
+  ],
+  "item": {
+    "wizards": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

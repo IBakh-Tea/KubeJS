@@ -1,0 +1,43 @@
+{
+  "customGroups": [
+    {
+      "name": "aquamirae_lance",
+      "items": [
+       "aquamirae:coral_lance",
+"aquamirae:sweet_lance",
+"aquamirae:whisper_of_the_abyss"
+      ]
+    }
+  ],
+  "item": {
+     "aquamirae_lance": {
+      "kind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+           "var_1": "attack_spear",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+             "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

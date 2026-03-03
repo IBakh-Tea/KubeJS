@@ -1,0 +1,32 @@
+{
+  "customGroups": [
+    {
+      "name": "platinum_axes",
+      "items": [
+        "illagerinvasion:platinum_infused_hatchet"
+      ]
+    }
+  ],
+
+  "item": {
+    "platinum_axes": {
+      "kind": "TRIDENT",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "useItem",
+          "name": "use_trident"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ]
+    }
+  }
+}

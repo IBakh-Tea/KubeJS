@@ -1,0 +1,48 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_mythical_hammer",
+      "items": [
+        "simplyswords:hearthflame",
+        "simplyswords:soulkeeper",
+        "simplyswords:hiveheart"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_mythical_hammer": {
+      "kind": "MACE",
+      "armKind": "MACE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.15,
+          "offY": 0.4,
+          "offX": 0.06
+        }
+      }
+    }
+  }
+}

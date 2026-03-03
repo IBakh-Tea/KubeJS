@@ -1,0 +1,56 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_spear",
+      "items": [
+        "kubejs:oak_iron_spear",
+        "kubejs:spruce_iron_spear",
+        "kubejs:birch_iron_spear",
+        "kubejs:jungle_iron_spear",
+        "kubejs:acacia_iron_spear",
+        "kubejs:dark_oak_iron_spear",
+        "kubejs:mangrove_iron_spear",
+        "kubejs:bamboo_iron_spear",
+        "kubejs:cherry_iron_spear",
+        "kubejs:crimson_iron_spear",
+        "kubejs:warped_iron_spear"
+      ]
+    }
+  ],
+  "item": {
+    "kubejs_spear": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_3": "attack_spear",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

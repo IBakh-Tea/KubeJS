@@ -1,0 +1,67 @@
+{
+  "customGroups": [
+    {
+      "name": "witcher_rpg",
+      "items": [
+"witcher_rpg:ultimatum_sword",
+"witcher_rpg:golden_witcher_sword",
+"witcher_rpg:meteorite_silver_witcher_sword",
+"witcher_rpg:diamond_witcher_sword",
+"witcher_rpg:netherite_witcher_sword",
+"witcher_rpg:silver_witcher_sword",
+"witcher_rpg:steel_witcher_sword",
+"witcher_rpg:aeternium_witcher_sword",
+"witcher_rpg:meteorite_witcher_sword",
+"witcher_rpg:iron_witcher_sword",
+"witcher_rpg:aerondight_sword",
+"witcher_rpg:dark_steel_witcher_sword",
+"witcher_rpg:dark_iron_witcher_sword",
+"witcher_rpg:winters_blade_sword"
+
+      ]
+    }
+  ],
+  "item": {
+     "witcher_rpg": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+             "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+           "var_3": "attack_1",
+           "var_4": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+            },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

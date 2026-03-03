@@ -1,0 +1,65 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_sickle",
+      "items": [
+        "kubejs:oak_iron_sickle",
+        "kubejs:spruce_iron_sickle",
+        "kubejs:birch_iron_sickle",
+        "kubejs:jungle_iron_sickle",
+        "kubejs:acacia_iron_sickle",
+        "kubejs:dark_oak_iron_sickle",
+        "kubejs:mangrove_iron_sickle",
+        "kubejs:bamboo_iron_sickle",
+        "kubejs:cherry_iron_sickle",
+        "kubejs:crimson_iron_sickle",
+        "kubejs:warped_iron_sickle"
+      ]
+    }
+  ],
+  "item": {
+    "kubejs_sickle": {
+      "kind": "AXE",
+      "armKind": "AXE",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_2",
+          "attack_4": "attack_1",
+          "attack_5": "attack_4",
+          "attack_6": "attack_4"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052
+        }
+      }
+    }
+  }
+}

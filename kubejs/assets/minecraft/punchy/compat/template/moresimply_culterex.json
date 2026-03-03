@@ -1,0 +1,42 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_culterex",
+      "items": [
+        "simplymore:culterex"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_culterex": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.3,
+          "offY": 0.03
+        },
+        "left": {
+          "scale": 1.3,
+          "offY": 0.03
+        }
+      }
+    }
+  }
+}

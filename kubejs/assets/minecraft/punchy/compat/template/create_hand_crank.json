@@ -1,0 +1,34 @@
+{
+  "customGroups": [
+    {
+      "name": "create_hand_crank",
+      "items": [
+"create:hand_crank",
+"create:placard"
+
+
+
+
+      ]
+    }
+  ],
+
+  "item": {
+  "create_hand_crank": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.05,
+             "offZ": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.05,
+          "offZ": 0.1
+        }
+      }
+    }
+  }
+}

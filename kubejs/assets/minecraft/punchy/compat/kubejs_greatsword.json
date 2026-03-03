@@ -1,0 +1,52 @@
+{
+  "customGroups": [
+    {
+      "name": "kubejs_greatsword",
+      "items": [
+        "kubejs:oak_iron_greatsword",
+        "kubejs:spruce_iron_greatsword",
+        "kubejs:birch_iron_greatsword",
+        "kubejs:jungle_iron_greatsword",
+        "kubejs:acacia_iron_greatsword",
+        "kubejs:dark_oak_iron_greatsword",
+        "kubejs:mangrove_iron_greatsword",
+        "kubejs:bamboo_iron_greatsword",
+        "kubejs:cherry_iron_greatsword",
+        "kubejs:crimson_iron_greatsword",
+        "kubejs:warped_iron_greatsword"
+      ]
+    }
+  ],
+  "item": {
+    "kubejs_greatsword": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "var_3": "attack_3",
+          "var_4": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0
+        },
+        "left": {
+          "scale": 1.0
+        }
+      }
+    }
+  }
+}

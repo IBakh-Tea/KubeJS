@@ -1,0 +1,28 @@
+{
+  "active": true,
+  "id": "sneak_speed",
+  "maximumLevel": 5,
+  "prices": [
+    2,
+    2,
+    3,
+    3,
+    4
+  ],
+  "values": [
+    30.0,
+    60.0,
+    90.0,
+    120.0,
+    150.0
+  ],
+  "type": "GENERIC",
+  "category": "ABILITIES",
+  "modifier": "minecraft:player.sneaking_speed",
+  "operation": "ADD_MULTIPLIED_BASE",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/sneak_speed.png",
+  "displayName": "skill.tyzs_skills.sneak_speed.displayName",
+  "description": "skill.tyzs_skills.sneak_speed.description",
+  "unit": "skill.tyzs_skills.unit.percentage"
+}

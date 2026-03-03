@@ -1,0 +1,79 @@
+{
+  "customGroups": [
+    {
+      "name": "betterend_lanterns_jadestone_and_more_stone",
+      "items": [
+        "betterend:umbralith_lantern",
+        "betterend:sandy_jadestone_lantern",
+        "betterend:azure_jadestone_lantern",
+        "betterend:virid_jadestone_lantern",
+        "betterend:sulphuric_rock_lantern",
+        "betterend:violecite_lantern",
+        "betterend:flavolite_lantern",
+        "betterend:blackstone_lantern",
+"betterend:granite_lantern",
+"betterend:diorite_lantern",
+"betterend:andesite_lantern",
+"betterend:end_stone_lantern",
+"betterend:quartz_lantern",
+"betterend:purpur_lantern"
+
+      ]
+    }
+  ],
+
+  "item": {
+   "betterend_lanterns_jadestone_and_more_stone": {
+      "kind": "LANTERN",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.05,
+          "offY": -0.4,
+          "rotX": -26.0,
+          "offZ": 0.17
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": -0.05,
+          "rotX": -26.0,
+          "offY": -0.4,
+          "offZ": 0.17
+        }
+      },
+
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21,
+          "offZ": -0.1,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.0,
+          "offY": 0.21,
+          "offZ": -0.1,
+          "rotX": -23.0,
+          "rotY": 0.0,
+          "rotZ": -1.0
+        }
+      },
+
+      "physics": [
+        {
+          "name": "FULL_PENDULUM",
+          "limitDeg": 55.0,
+          "force": 0.1,
+          "speed": 1.0,
+          "cameraSens": 0.25,
+          "gravity": 25.0
+        }
+      ]
+    }
+  }
+}

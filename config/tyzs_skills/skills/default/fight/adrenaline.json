@@ -1,0 +1,19 @@
+{
+  "active": true,
+  "id": "adrenaline",
+  "maximumLevel": 1,
+  "prices": [
+    2
+  ],
+  "values": [
+    25.0
+  ],
+  "type": "IMMUTABLE",
+  "category": "FIGHT",
+  "modifier": "",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/adrenaline.png",
+  "displayName": "skill.tyzs_skills.adrenaline.displayName",
+  "description": "skill.tyzs_skills.adrenaline.description",
+  "unit": "skill.tyzs_skills.unit.percentage"
+}

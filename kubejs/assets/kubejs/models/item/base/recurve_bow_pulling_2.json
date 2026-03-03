@@ -1,0 +1,8 @@
+{
+  "parent": "kubejs:item/base/recurve_bow",
+  "textures": {
+    "layer0": "kubejs:item/recurve_bow/string_2",
+    "layer1": "kubejs:item/recurve_bow/stave_2",
+    "layer2": "kubejs:item/recurve_bow/arrow_2"
+  }
+}

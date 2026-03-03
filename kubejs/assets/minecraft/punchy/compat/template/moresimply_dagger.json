@@ -1,0 +1,49 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_dagger",
+      "items": [
+        "simplymore:iron_dagger",
+        "simplymore:gold_dagger",
+        "simplymore:diamond_dagger",
+        "simplymore:netherite_dagger",
+        "simplymore:runic_dagger",
+        "simplymore:mimicry_dagger"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_dagger": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.09
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": -0.01,
+          "offY": 0.09
+        }
+      }
+    }
+  }
+}

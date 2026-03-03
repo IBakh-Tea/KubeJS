@@ -1,0 +1,50 @@
+{
+  "customGroups": [
+    {
+      "name": "simplyswords_mythical_glaive",
+      "items": [
+        "simplyswords:decaying_relic",
+        "simplyswords:magispear"
+      ]
+    }
+  ],
+  "item": {
+    "simplyswords_mythical_glaive": {
+      "kind": "SWORD",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3_right"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.0,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.1,
+          "offY": 0.6
+        }
+      }
+    }
+  }
+}

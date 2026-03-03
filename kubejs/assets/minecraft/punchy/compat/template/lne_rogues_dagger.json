@@ -1,0 +1,59 @@
+{
+  "customGroups": [
+    {
+      "name": "lne_rogues_dagger",
+      "items": [
+    "lne_rogues:elder_guardian_dagger",
+"lne_rogues:ender_dragon_dagger",
+"lne_rogues:wither_dagger",
+"lne_rogues:glacial_dagger"
+
+      ]
+    }
+  ],
+
+  "item": {
+    "lne_rogues_dagger": {
+      "kind": "AXE",
+      "armKind": "AXE",
+
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_2",
+         "attack_5": "attack_5"
+        }
+      ],
+
+      "transforms": {
+        "right": {
+          "scale": 1.1
+        },
+        "left": {
+          "scale": 1.1
+        }
+      }
+    }
+  }
+}

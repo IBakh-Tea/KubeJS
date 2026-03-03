@@ -1,0 +1,42 @@
+{
+  "gui.destiny.whoareyou": "Who are you?",
+  "gui.destiny.journey": "Where will your journey start?",
+  "gui.destiny.next": "Next",
+
+  "item.mca.blueprint": "Town Blueprint",
+
+  "gui.destiny.somewhere": "Somewhere",
+  "gui.destiny.tavern_oak/1": "Tavern",
+  "gui.destiny.tavern_snowy/1": "Snowy Tavern",
+  "gui.destiny.tavern_desert/1": "Desert Tavern",
+  "gui.destiny.plains_village": "Town",
+  "gui.destiny.snowy_village": "Snowy Town",
+  "gui.destiny.desert_village": "Desert Town",
+  "gui.destiny.overworld/medium/ruine_bateaux": "Ruine Bateaux",
+  "gui.destiny.ancient_city": "Ancient City",
+
+  "gui.villager_editor.player_skin": "Use Player Skin",
+  "gui.villager_editor.model_blacklist_hint": "Use Player Skin",
+  "gui.villager_editor.model_blacklist_hint.tooltip": "(NOT RECOMMENDED) - But if you really want to, set \"forceVillagerPlayerModel\" to false in mca.json located in config",
+
+  "destiny.story.reason/1": "One day, you decided to go on a journey to explore the lands.",
+  "destiny.story.travelling/1": "Travelling far from home, avoiding danger and rationing your food.",
+  "destiny.story.somewhere/1": "You eventually settle in a quiet area, making preparations for the upcoming adventure.",
+  "destiny.story.sailing/1": "You board a small ship after spending some coin, hoping for some adventure. Eventually, a storm decided the fate of the vessel and its crew, destroying and tearing it apart.",
+  "destiny.story.tavern_oak/1": "One night, you found a tavern in the plains, you paid a few coins and stayed over for the night.",
+  "destiny.story.tavern_snowy/1": "After fighting through the cold snowy lands, you eventually find a tavern, you stayed over for the night.",
+  "destiny.story.tavern_desert/1": "You followed a caravan to a town, but you got split from them after an ambush by pillagers, during the night, you found a tavern, you stayed over for the night.",
+  "destiny.story.plains_village/1": "In the middle of the plains, you see a settlement in occupation of the Kingdom of Solaria. The climate is moderate, the people friendly, perhaps they have place for another settler?",
+  "destiny.story.snowy_village/1": "You fight your way through a heavy snowstorm when you see dim lights up ahead. It is a town occupied by the Province of Wintergard, maybe they have an inn to warm up?",
+  "destiny.story.desert_village/1": "One day, you came across a small town in the middle of a desert. The water is scarce and the sun, glaring against your eyes, but the townsfolk seem satisfied with their life",
+  "destiny.story.overworld/medium/ruine_bateaux/1": "You regain your consciousness, but you're being taken care of in some repurposed wreck. Some good Samaritans have found you drifting ashore and have taken good care of you. You don't know where your crew went, and it's not likely they survived the heavy storm.",
+  "destiny.story.ancient_city/1": "But an unfortunate misstep sends you tumbling into a deep, dark cave. When you regain consciousness, you find yourself surrounded by the ancient ruins of a city forgotten by the world for eons.",
+
+  "item.mca.scythe": "Spear of Death",
+  "item.mca.scythe.tooltip": "Slay a mortal to reap its soul which can be used to reflourish your lost beloved. Beware, as without the power of the Vial of Revival, they may come back undead.",
+
+  "reaper.day": "The disciples of death only come out at nightfall.",
+
+  "task.bePatient": "Work in progress - be patient!",
+  "task.advancement_minecraft:end/kill_dragon": "Defeat the Ancient Dragon!"
+}

@@ -1,0 +1,50 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_lance_2mytical",
+      "items": [
+        "simplymore:iron_lance",
+        "simplymore:gold_lance",
+        "simplymore:diamond_lance",
+        "simplymore:netherite_lance",
+        "simplymore:runic_lance",
+        "simplymore:exedrill",
+        "simplymore:jester_penetrate",
+        "simplymore:mimicry_lance"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_lance_2mytical": {
+      "kind": "SPEAR",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_spear"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.05
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.05
+        }
+      }
+    }
+  }
+}

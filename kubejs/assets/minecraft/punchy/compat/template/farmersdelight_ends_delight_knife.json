@@ -1,0 +1,72 @@
+{
+  "customGroups": [
+    {
+      "name": "farmersdelight_ends_delight_knife",
+      "items": [
+        "farmersdelight:flint_knife",
+        "farmersdelight:iron_knife",
+        "farmersdelight:golden_knife",
+        "farmersdelight:diamond_knife",
+        "farmersdelight:netherite_knife",
+        "ends_delight:end_stone_knife",
+        "ends_delight:purpur_knife",
+        "ends_delight:dragon_egg_shell_knife",
+        "ends_delight:dragon_tooth_knife",
+           "betterenddelight:terminite_knife",
+              "betterenddelight:thallasium_knife", 
+             "betterenddelight:aeternium_knife",
+               "betterenddelight:amber_knife", 
+              "betterenddelight:lumecorn_cudgel"
+      ]
+    }
+  ],
+  "item": {
+    "farmersdelight_ends_delight_knife": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_forward"
+        },
+        {
+          "type": "useItem",
+          "name": "throw_item"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2",
+          "attack_3": "attack_1",
+          "attack_4": "attack_2",
+          "attack_5": "attack_5"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.02
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.02
+        }
+      }
+    }
+  }
+}

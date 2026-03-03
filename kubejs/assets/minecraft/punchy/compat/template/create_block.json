@@ -1,0 +1,97 @@
+{
+  "customGroups": [
+    {
+      "name": "create_block",
+      "items": [
+"create:brass_funnel",
+"create:andesite_tunnel",
+"create:white_postbox",
+"create:andesite_funnel",
+"create:package_frogport",
+"create:creative_crate",
+"create:brass_tunnel",
+"create:rotation_speed_controller",
+"create:stock_link",
+"create:mechanical_pump",
+"create:blaze_burner",
+"create:millstone",
+"create:weighted_ejector",
+"create:depot",
+"create:creative_fluid_tank",
+"create:spout",
+"create:mechanical_harvester",
+"create:mechanical_plough",
+"create:mechanical_drill",
+"create:item_drain",
+"create:gantry_shaft",
+"create:fluid_tank",
+"create:contraption_controls",
+"create:deployer",
+"create:mechanical_saw",
+"create:portable_storage_interface",
+"create:elevator_pulley",
+"create:controls",
+"create:steam_whistle",
+"create:steam_engine",
+"create:track_station",
+"create:pulse_extender",
+"create:powered_latch",
+"create:display_board",
+"create:display_link",
+"create:haunted_bell",
+"create:desk_bell",
+"create:peculiar_bell",
+"create:cuckoo_clock",
+"create:empty_blaze_burner",
+"create:turntable",
+"create:creative_motor",
+"create:red_seat",
+"create:metal_girder",
+"create:copycat_step",
+"create:schematic_table",
+"create:portable_fluid_interface",
+"create:basin",
+"create:stressometer",
+"create:speedometer",
+"create:nozzle",
+"create:schematicannon",
+"create:chute",
+"create:pulse_repeater",
+"create:pulse_timer",
+"create:red_table_cloth",
+"create:andesite_table_cloth",
+"create:brass_table_cloth",
+"create:copper_table_cloth",
+"create:powered_toggle_latch",
+"create:nixie_tube",
+"create:redstone_link",
+"create:cardboard_package_12x12",
+"create:cardboard_package_10x12",
+"create:cardboard_package_10x8",
+"create:cardboard_package_12x10"
+
+
+
+      ]
+    }
+  ],
+
+  "item": {
+  "create_block": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.2,
+             "offZ": 0.05
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "offZ": 0.05
+        }
+      }
+    }
+  }
+}

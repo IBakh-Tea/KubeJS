@@ -1,0 +1,47 @@
+{
+  "customGroups": [
+    {
+      "name": "moresimply_glimmerstep",
+      "items": [
+        "simplymore:glimmerstep"
+      ]
+    }
+  ],
+  "item": {
+    "moresimply_glimmerstep": {
+      "kind": "SPEAR",
+      "armKind": "SPEAR",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_spear"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "use_spear_pose_3"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.15
+        },
+        "left": {
+          "scale": 1.1,
+          "offZ": 0.052,
+          "offY": 0.15
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "customGroups": [
+    {
+      "name": "paladins_claymore",
+      "items": [
+    "paladins:iron_claymore",
+"paladins:stone_claymore",
+"paladins:golden_claymore",
+"paladins:diamond_claymore",
+"paladins:netherite_claymore",
+"paladins:aeternium_claymore"
+
+      ]
+    }
+  ],
+  "item": {
+    "paladins_claymore": {
+      "kind": "SWORD",
+      "armKind": "SWORD",
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+             "var_2": "attack_2",
+                "var_3": "attack_mace"
+        },
+        {
+          "type": "mining",
+          "name": "mining_use_digging"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0
+        },
+        "left": {
+          "scale": 1.0
+        }
+      }
+    }
+  }
+}

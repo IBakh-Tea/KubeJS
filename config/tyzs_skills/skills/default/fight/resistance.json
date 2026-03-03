@@ -1,0 +1,27 @@
+{
+  "active": true,
+  "id": "resistance",
+  "maximumLevel": 5,
+  "prices": [
+    5,
+    8,
+    12,
+    18,
+    24
+  ],
+  "values": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "type": "IMMUTABLE",
+  "category": "FIGHT",
+  "modifier": "",
+  "purchasable": true,
+  "icon": "tyzs_skills:textures/gui/skills/resistance.png",
+  "displayName": "skill.tyzs_skills.resistance.displayName",
+  "description": "skill.tyzs_skills.resistance.description",
+  "unit": "skill.tyzs_skills.unit.percentage"
+}

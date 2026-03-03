@@ -1,0 +1,31 @@
+{
+  "customGroups": [
+    {
+      "name": "sand_paper_group",
+      "items": [
+        "create:sand_paper",
+        "create:red_sand_paper"
+      ]
+    }
+  ],
+
+  "item": {
+    "sand_paper_group": {
+      "kind": "INGREDIENT",
+      "customAnimation": [
+        {
+          "type": "mining",
+          "name":  "attack_1"
+        },
+        {
+          "type": "useItem",
+          "name": "shears"
+        },
+        {
+          "type": "attack",
+          "var_1": "attack_1"
+        }
+      ]
+    }
+  }
+}

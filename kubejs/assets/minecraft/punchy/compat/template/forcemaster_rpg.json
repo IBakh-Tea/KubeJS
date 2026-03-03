@@ -1,0 +1,51 @@
+{
+  "customGroups": [
+    {
+      "name": "forcemaster_rpg",
+      "items": [
+"forcemaster_rpg:glacial_knuckle",
+"forcemaster_rpg:wither_knuckle",
+"forcemaster_rpg:golden_knuckle",
+"forcemaster_rpg:iron_knuckle",
+"forcemaster_rpg:diamond_knuckle",
+"forcemaster_rpg:ender_dragon_knuckle",
+"forcemaster_rpg:netherite_knuckle",
+"forcemaster_rpg:wooden_knuckle",
+"forcemaster_rpg:elder_guardian_knuckle",
+"forcemaster_rpg:stone_knuckle",
+"forcemaster_rpg:aeternium_knuckle"
+
+      ]
+    }
+  ],
+  "item": {
+     "forcemaster_rpg": {
+      "kind": "SWORD",
+      "customAnimation": [
+        {
+                "type": "attack",
+          "var_1": "attack_1",
+           "var_2": "attack_1",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+            },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+      "transforms": {
+        "right": {
+          "scale": 1.0
+        },
+        "left": {
+          "scale": 1.0
+        }
+      }
+    }
+  }
+}

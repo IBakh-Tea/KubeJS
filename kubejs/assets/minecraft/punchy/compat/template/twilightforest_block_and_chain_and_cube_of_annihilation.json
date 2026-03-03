@@ -1,0 +1,57 @@
+{
+  "customGroups": [
+    {
+      "name": "twilightforest_block_and_chain_and_cube_of_annihilation",
+      "items": [
+        "twilightforest:block_and_chain",
+        "twilightforest:cube_of_annihilation"
+
+      ]
+    }
+  ],
+
+  "item": {
+   "twilightforest_block_and_chain_and_cube_of_annihilation": {
+      "kind": "SWORD",
+
+      "customAnimation": [
+        {
+          "type": "attack",
+          "var_1": "attack_1",
+          "var_2": "attack_2",
+          "critical_hit": "attack_critical"
+        },
+        {
+          "type": "mining",
+          "name": "attack_1"
+        },
+        {
+          "type": "triggerable",
+          "name": "sword_inspect",
+          "key": "I"
+        }
+      ],
+
+      "betterCombat": [
+        {
+          "type": "melee_combo",
+          "attack_1": "attack_1",
+          "attack_2": "attack_2"
+        }
+      ],
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offZ": 0.052,
+          "offY": 0.1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "customGroups": [
+    {
+      "name": "create_shaft_piston_extension",
+      "items": [
+"create:piston_extension_pole",
+"create:shaft"
+
+
+
+
+
+      ]
+    }
+  ],
+
+  "item": {
+  "create_shaft_piston_extension": {
+      "kind": "BLOCK",
+
+      "transforms": {
+        "right": {
+          "scale": 1.0,
+          "offY": 0.2,
+             "offZ": 0.1
+        },
+        "left": {
+          "scale": 1.0,
+          "offY": 0.2,
+          "offZ": 0.1
+        }
+      }
+    }
+  }
+}
