@@ -1,7 +1,141 @@
 console.info("Hello, World! (Loaded server example script)");
 
-PlayerEvents.tick((event) => {
-  const { player, level, server } = event;
+ItemEvents.rightClicked("minecraft:rotten_flesh", (e) => {
+  const { player, level, server } = e;
+
+  let zombie = level.createEntity("minecraft:zombie");
+  zombie.setPosition(player.x, player.y, player.z);
+
+  zombie.persistentData.owner = player.uuid.toString();
+
+  zombie.customName = `Телохранитель ${player.username}`;
+  zombie.setItemSlot("head", "minecraft:netherite_helmet");
+
+  let teamName = `guard_${player.username}`;
+  server.runCommandSilent(`team add ${teamName}`);
+  server.runCommandSilent(`team join ${teamName} ${player.username}`);
+  server.runCommandSilent(`team join ${teamName} ${zombie.uuid}`);
+  server.runCommandSilent(`team modify ${teamName} friendlyFire false`);
+
+  zombie.spawn();
+});
+
+ItemEvents.rightClicked("minecraft:bone", (e) => {
+  const { player, level, server } = e;
+
+  let skeleton = level.createEntity("minecraft:skeleton");
+  skeleton.setPosition(player.x, player.y, player.z);
+
+  skeleton.persistentData.owner = player.uuid.toString();
+
+  skeleton.customName = `Телохранитель ${player.username}`;
+  skeleton.setItemSlot("head", "minecraft:netherite_helmet");
+
+  let teamName = `guard_${player.username}`;
+  server.runCommandSilent(`team add ${teamName}`);
+  server.runCommandSilent(`team join ${teamName} ${player.username}`);
+  server.runCommandSilent(`team join ${teamName} ${skeleton.uuid}`);
+  server.runCommandSilent(`team modify ${teamName} friendlyFire false`);
+
+  skeleton.spawn();
+});
+
+PlayerEvents.tick((e) => {
+  const { player, level, server } = e;
+  if (server.tickCount % 10 != 0) return;
+
+  let summons = level
+    .getEntities()
+    .filter(
+      (e) =>
+        (e.type == "minecraft:zombie" || e.type == "minecraft:skeleton") &&
+        e.persistentData.owner == player.uuid.toString(),
+    );
+
+  if (summons.length == 0) return;
+
+  summons.forEach((summon) => {
+    if (player) {
+      let dx = summon.x - player.x;
+      let dy = summon.y - player.y;
+      let dz = summon.z - player.z;
+      let dist = dx * dx + dy * dy + dz * dz;
+
+      if (dist > 900) {
+        summon.setPosition(player.x, player.y, player.z);
+      } else if (dist > 16) {
+        summon.navigation.moveTo(player.x, player.y, player.z, 1.4);
+      }
+    }
+  });
+});
+
+EntityEvents.afterHurt((e) => {
+  const { entity, source, level } = e;
+  let attacker = source.actual;
+
+  if (!attacker || !attacker.isLiving()) return;
+
+  let victimOwner = entity.isPlayer()
+    ? entity.uuid.toString()
+    : entity.persistentData.owner;
+  let attackerOwner = attacker.isPlayer()
+    ? attacker.uuid.toString()
+    : attacker.persistentData.owner;
+
+  if (victimOwner && victimOwner == attackerOwner) {
+    if (entity.isLiving() && !entity.isPlayer()) {
+      entity.setTarget(null);
+    }
+    return;
+  }
+
+  if (entity.isPlayer()) {
+    let guards = level
+      .getEntities()
+      .filter(
+        (e) =>
+          (e.type == "minecraft:zombie" || e.type == "minecraft:skeleton") &&
+          e.persistentData.owner == entity.uuid.toString(),
+      );
+    guards.forEach((guard) => guard.setTarget(attacker));
+  }
+
+  if (attackerOwner) {
+    let target = entity;
+    if (target.isLiving() && target != attacker) {
+      let guards = level
+        .getEntities()
+        .filter(
+          (e) =>
+            (e.type == "minecraft:zombie" || e.type == "minecraft:skeleton") &&
+            e.persistentData.owner == attackerOwner,
+        );
+      guards.forEach((guard) => {
+        if (guard != target) guard.setTarget(target);
+      });
+    }
+  }
+});
+
+EntityEvents.death((e) => {
+  const { entity, level } = e;
+
+  let guards = level
+    .getEntities()
+    .filter(
+      (e) =>
+        (e.type == "minecraft:zombie" || e.type == "minecraft:skeleton") &&
+        e.persistentData.owner !== "",
+    );
+
+  guards.forEach((guard) => {
+    guard.setTarget(null);
+  });
+});
+
+PlayerEvents.tick((e) => {
+  const { player, level, server } = e;
   if (server.tickCount % 5 != 0) return;
 
   level.spawnParticles(
