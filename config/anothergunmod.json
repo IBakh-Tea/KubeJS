@@ -1,0 +1,55 @@
+{
+  "revolver": {
+    "damage": 6,
+    "reloadTime": 13,
+    "recoil": 15,
+    "fireRate": 15,
+    "pelletCount": 1
+  },
+  "rifle": {
+    "damage": 12,
+    "reloadTime": 20,
+    "recoil": 20,
+    "fireRate": 25,
+    "pelletCount": 1
+  },
+  "rifleSpyglass": {
+    "damage": 16,
+    "reloadTime": 25,
+    "recoil": 30,
+    "fireRate": 35,
+    "pelletCount": 1
+  },
+  "shotgun": {
+    "damage": 4,
+    "reloadTime": 16,
+    "recoil": 20,
+    "fireRate": 20,
+    "pelletCount": 5
+  },
+  "autogun": {
+    "damage": 4,
+    "reloadTime": 20,
+    "recoil": 5,
+    "fireRate": 5,
+    "pelletCount": 1
+  },
+  "machinegun": {
+    "damage": 6,
+    "reloadTime": 24,
+    "recoil": 12,
+    "fireRate": 3,
+    "pelletCount": 1
+  },
+  "flamethrower": {
+    "damage": 1,
+    "reloadTime": 20
+  },
+  "misc": {
+    "gunsAttractMobs": true,
+    "detailedDesc": true,
+    "igniteBlocks": false,
+    "magazineReloadTime": 3,
+    "distantSoundRange": 64
+  }
+}

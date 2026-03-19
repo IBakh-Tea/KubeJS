@@ -1,0 +1,43 @@
+#配置
+#Config
+[Config]
+	#器官过滤系统的周期（tick）
+	#Filtration period of organ system (ticks)
+	# Default: 60
+	# Range: 20 ~ 600
+	filtrationPeriod = 60
+	#无需高级手术即可打开胸腔的最大生命值阈值
+	#Minimum max health threshold to open chest cavity without advanced surgery
+	# Default: 15
+	# Range: 1 ~ 40
+	minChestOpenMaxHealth = 15
+	#守卫者激光技能的有效距离
+	#Effective distance of guardian laser skill
+	# Default: 16
+	# Range: 5 ~ 64
+	guardianLaserDistance = 16
+	#末影传送技能的尝试循环次数
+	#Attempt loops for enderman teleport skill
+	# Default: 16
+	# Range: 1 ~ 64
+	randomTeleportAttempts = 16
+	#熔炉力量效果的最大持续时间（tick）
+	#Maximum duration of furnace power effect (ticks)
+	# Default: 24000
+	# Range: 1200 ~ 72000
+	furnacePowerMaxDuration = 24000
+	#潜影贝子弹技能的检测距离
+	#Detection distance of shulker bullet skill
+	# Default: 32
+	# Range: 10 ~ 128
+	shulkerBulletDistance = 32
+	#监听者音爆技能的距离
+	#Distance of warden sonic boom skill
+	# Default: 7
+	# Range: 3 ~ 32
+	sonicBoomDistance = 7
+	#末影水晶对拥有结晶实体的搜索范围
+	#Search range of end crystal for has crystallization entities
+	# Default: 16
+	# Range: 5 ~ 64
+	crystalEffectSearchRange = 16

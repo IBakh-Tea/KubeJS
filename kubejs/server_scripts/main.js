@@ -134,47 +134,47 @@ EntityEvents.death((e) => {
   });
 });
 
-PlayerEvents.tick((e) => {
-  const { player, level, server } = e;
-  if (server.tickCount % 5 != 0) return;
+// PlayerEvents.tick((e) => {
+//   const { player, level, server } = e;
+//   if (server.tickCount % 5 != 0) return;
 
-  level.spawnParticles(
-    "apothic_enchanting:enchant_end",
-    false,
-    player.x,
-    player.y + 1.5,
-    player.z,
-    0,
-    0,
-    0,
-    10,
-    1,
-  );
+//   level.spawnParticles(
+//     "leaves:birch_leaves",
+//     false,
+//     player.x,
+//     player.y + 1.5,
+//     player.z,
+//     0,
+//     0,
+//     0,
+//     10,
+//     1,
+//   );
 
-  let radius = 0.5;
-  let particlesCount = 15;
-  let heightOffset = 0.1;
+//   let radius = 0.5;
+//   let particlesCount = 15;
+//   let heightOffset = 0.1;
 
-  for (let i = 0; i < particlesCount; i++) {
-    let angle = (i * 2 * Math.PI) / particlesCount;
+//   for (let i = 0; i < particlesCount; i++) {
+//     let angle = (i * 2 * Math.PI) / particlesCount;
 
-    let x = radius * Math.cos(angle);
-    let z = radius * Math.sin(angle);
+//     let x = radius * Math.cos(angle);
+//     let z = radius * Math.sin(angle);
 
-    level.spawnParticles(
-      "minecraft:soul_fire_flame",
-      true,
-      player.x + x,
-      player.y + heightOffset,
-      player.z + z,
-      0,
-      0,
-      0,
-      1,
-      0,
-    );
-  }
-});
+//     level.spawnParticles(
+//       "davidparticles:end",
+//       true,
+//       player.x + x,
+//       player.y + heightOffset,
+//       player.z + z,
+//       0,
+//       0,
+//       0,
+//       1,
+//       0,
+//     );
+//   }
+// });
 
 function spawnLightning(level, start, end, segments) {
   let currentStart = start;
