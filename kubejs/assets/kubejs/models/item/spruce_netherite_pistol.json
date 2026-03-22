@@ -1,9 +1,0 @@
-{
-  "parent": "kubejs:item/base/pistol",
-  "overrides": [
-    {
-      "predicate": { "charged": 1 },
-      "model": "kubejs:item/base/pistol_loaded"
-    }
-  ]
-}

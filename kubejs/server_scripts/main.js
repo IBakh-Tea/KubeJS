@@ -1,4 +1,270 @@
-console.info("Hello, World! (Loaded server example script)");
+const Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
+
+let used = {};
+
+NetworkEvents.dataReceived("key.jump", (e) => {
+  const { player, level } = e;
+
+  let uuid = player.uuid;
+
+  let boots = player.getEquipment("feet");
+
+  if (!boots || boots.id != "kubejs:double_jump_boots") {
+    used[uuid] = false;
+    return;
+  }
+
+  if (player.onGround()) {
+    used[uuid] = false;
+    return;
+  }
+
+  // if (!used[uuid] && player.shiftKeyDown) {
+  //   player.tell("kek");
+  //   used[uuid] = true;
+  //   let current = player.deltaMovement;
+  //   let newMotion = new Vec3(
+  //     current.x + player.motionX,
+  //     0.5,
+  //     current.z + player.motionZ,
+  //   );
+
+  //   player.setDeltaMovement(newMotion);
+
+  //   player.hurtMarked = true;
+
+  //   level.spawnParticles(
+  //     "cloud",
+  //     true,
+  //     player.x,
+  //     player.y,
+  //     player.z,
+  //     0.1,
+  //     0.1,
+  //     0.1,
+  //     10,
+  //     0.05,
+  //   );
+  // } else
+  if (!used[uuid] && player.motionY <= 0) {
+    player.tell("jump");
+    used[uuid] = true;
+
+    let current = player.deltaMovement;
+    let newMotion = new Vec3(
+      current.x + player.motionX,
+      0.42,
+      current.z + player.motionZ,
+    );
+
+    player.setDeltaMovement(newMotion);
+
+    player.hurtMarked = true;
+
+    level.spawnParticles(
+      "cloud",
+      true,
+      player.x,
+      player.y,
+      player.z,
+      0.1,
+      0.1,
+      0.1,
+      10,
+      0.05,
+    );
+  }
+});
+
+NetworkEvents.dataReceived("key.dash", (e) => {
+  const { player, level } = e;
+
+  const direction = player.getLookAngle();
+  const force = 1;
+
+  level.spawnParticles(
+    "cloud",
+    true,
+    player.x,
+    player.y,
+    player.z,
+    0.1,
+    0.1,
+    0.1,
+    10,
+    0.05,
+  );
+  player.hurtMarked = true;
+  player.addMotion(direction.x * force, 0, direction.z * force);
+  player.potionEffects.add("minecraft:speed", 20 * 3, 1);
+});
+
+ItemEvents.rightClicked("kubejs:revolver", (e) => {
+  const { item, player, level, hand } = e;
+
+  if (!item.customData.cylinder) {
+    item.setCustomData({
+      cylinder: [
+        "minecraft:air",
+        "minecraft:air",
+        "minecraft:air",
+        "minecraft:air",
+        "minecraft:air",
+        "minecraft:air",
+      ],
+      currentIndex: 0,
+    });
+    player.tell(item.customData);
+  }
+
+  let cylinder = item.customData.cylinder,
+    currentIndex = parseInt(item.customData.currentIndex);
+
+  let ammoCount = cylinder.filter((item) => item != "minecraft:air").length;
+
+  let offhandItem = player.getHeldItem("off_hand");
+
+  if (
+    ammoCount < 6 &&
+    offhandItem.id == "kubejs:pistol_round" &&
+    cylinder[currentIndex] == "minecraft:air"
+  ) {
+    cylinder[currentIndex] = offhandItem.id;
+    item.setCustomData({
+      cylinder: cylinder,
+      currentIndex: (currentIndex + 1) % cylinder.length,
+    });
+    player.cooldowns.addCooldown(item, 10);
+    offhandItem.shrink(1);
+    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
+  } else if (cylinder[currentIndex] == "minecraft:air") {
+    item.setCustomData({
+      cylinder: cylinder,
+      currentIndex: (currentIndex + 1) % cylinder.length,
+    });
+    global.playSound(level, player, "minecraft:block.tripwire.click_on");
+  } else if (
+    ammoCount > 0 &&
+    ammoCount <= 6 &&
+    cylinder[currentIndex] != "minecraft:air"
+  ) {
+    cylinder[currentIndex] = "minecraft:air";
+    item.setCustomData({
+      cylinder: cylinder,
+      currentIndex: (currentIndex + 1) % cylinder.length,
+    });
+    global.playSound(level, player, "minecraft:entity.shulker.shoot");
+    global.shootBullet(player, 25, 6, 1, 0.1);
+  }
+});
+
+ItemEvents.rightClicked("kubejs:winchester", (e) => {
+  const { item, player, level, hand } = e;
+
+  let tube_magazine = item.customData.tube_magazine || [];
+
+  let ammoCount = tube_magazine.length;
+
+  let offhandItem = player.getHeldItem("off_hand");
+
+  if (ammoCount < 12 && offhandItem.id == "kubejs:rifle_round") {
+    tube_magazine.push(offhandItem.id);
+    item.setCustomData({ tube_magazine: tube_magazine });
+    player.cooldowns.addCooldown(item, 10);
+    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
+    offhandItem.shrink(1);
+  } else if (
+    ammoCount > 0 &&
+    ammoCount <= 12 &&
+    offhandItem.id == "minecraft:air"
+  ) {
+    tube_magazine.shift();
+    item.setCustomData({ tube_magazine: tube_magazine });
+    player.cooldowns.addCooldown(item, 10);
+    global.playSound(level, player, "minecraft:entity.shulker.shoot");
+    global.shootBullet(player, 55, 10, 1, 0);
+  } else if (ammoCount == 0) {
+    global.playSound(level, player, "minecraft:block.tripwire.click_on");
+  }
+});
+
+ItemEvents.rightClicked("kubejs:double_barrel_shotgun", (e) => {
+  const { item, player, level, hand } = e;
+
+  let chamber = item.customData.chamber || [];
+
+  let ammoCount = chamber.length;
+
+  let offhandItem = player.getHeldItem("off_hand");
+
+  if (ammoCount < 2 && offhandItem.id == "kubejs:shotgun_shell") {
+    chamber.push(offhandItem.id);
+    item.setCustomData({ chamber: chamber });
+    player.cooldowns.addCooldown(item, 10);
+    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
+    offhandItem.shrink(1);
+  } else if (
+    ammoCount == 2 &&
+    offhandItem.id == "minecraft:air" &&
+    player.shiftKeyDown
+  ) {
+    chamber = [];
+    item.setCustomData({ chamber: chamber });
+    player.cooldowns.addCooldown(item, 10);
+    global.playSound(level, player, "minecraft:entity.shulker.shoot");
+    global.shootBullet(player, 8, 1, 20, 0.5);
+  } else if (
+    ammoCount > 0 &&
+    ammoCount <= 2 &&
+    offhandItem.id == "minecraft:air"
+  ) {
+    chamber.shift();
+    item.setCustomData({ chamber: chamber });
+    player.cooldowns.addCooldown(item, 10);
+    global.playSound(level, player, "minecraft:entity.shulker.shoot");
+    global.shootBullet(player, 8, 1, 10, 0.5);
+  } else if (ammoCount == 0) {
+    global.playSound(level, player, "minecraft:block.tripwire.click_on");
+  }
+});
+
+ItemEvents.rightClicked("kubejs:pistol", (e) => {
+  const { item, player, hand } = e;
+  let customData = item.customData;
+  player.tell(customData);
+  let stage = parseInt(customData.stage) || 0;
+  player.tell(stage);
+
+  let offhandItem = player.getHeldItem("off_hand");
+
+  if (stage == 0 && offhandItem.id == "minecraft:gunpowder") {
+    customData = { stage: 1 };
+    offhandItem.count--;
+    player.cooldowns.addCooldown(item, 5);
+    player.setStatusMessage("Засыпан порох...");
+  } else if (stage == 1 && offhandItem.id == "minecraft:iron_nugget") {
+    customData = { stage: 2 };
+    offhandItem.count--;
+    player.cooldowns.addCooldown(item, 5);
+    player.setStatusMessage("Пуля вставлена...");
+  } else if (stage == 2 && offhandItem.id == "minecraft:stick") {
+    customData = { stage: 3 };
+    player.cooldowns.addCooldown(item, 5);
+    player.setStatusMessage("Оружие взведено!");
+  } else if (stage == 3) {
+    customData = { stage: 0 };
+    player.setStatusMessage("Выстрел");
+    let ray = player.rayTrace(8);
+
+    let entity = ray.entity;
+    player.tell(entity);
+    entity.attack(player.damageSources().generic(), 2);
+  }
+
+  player.tell(stage);
+
+  item.customData = customData;
+});
 
 ItemEvents.rightClicked("minecraft:rotten_flesh", (e) => {
   const { player, level, server } = e;
@@ -176,89 +442,35 @@ EntityEvents.death((e) => {
 //   }
 // });
 
-function spawnLightning(level, start, end, segments) {
-  let currentStart = start;
+// ItemEvents.rightClicked("minecraft:breeze_rod", (e) => {
+//   const { player, level, item } = e;
 
-  for (let i = 1; i <= segments; i++) {
-    let fraction = i / segments;
+//   let startPos = player.position().add(0, 1.2, 0);
+//   let range = 10.0;
 
-    let tx = start.x() + (end.x() - start.x()) * fraction;
-    let ty = start.y() + (end.y() - start.y()) * fraction;
-    let tz = start.z() + (end.z() - start.z()) * fraction;
+//   let target = level
+//     .getEntities()
+//     .filter(
+//       (entity) =>
+//         entity.living &&
+//         entity.uuid != player.uuid &&
+//         entity.distanceToEntity(player) < range,
+//     )[0];
 
-    let chaos = 1;
-    let nextPos =
-      i == segments
-        ? end
-        : {
-            x: tx + (Math.random() - 0.5) * chaos,
-            y: ty + (Math.random() - 0.5) * chaos,
-            z: tz + (Math.random() - 0.5) * chaos,
-          };
+//   if (!target) return;
 
-    drawParticleLine(level, currentStart, nextPos);
-    currentStart = nextPos;
-  }
-}
+//   let endPos;
+//   if (target) {
+//     endPos = target.position().add(0, target.eyeHeight / 1.5, 0);
 
-function drawParticleLine(level, p1, p2) {
-  let dist = Math.sqrt(
-    Math.pow(p2.x - p1.x, 2) +
-      Math.pow(p2.y - p1.y, 2) +
-      Math.pow(p2.z - p1.z, 2),
-  );
-  let density = 4;
-  let count = Math.max(1, dist * density);
+//     target.potionEffects.add("minecraft:slowness", 40, 2, false, false);
+//     target.potionEffects.add("minecraft:glowing", 20, 0, false, false);
+//   }
 
-  for (let i = 0; i < count; i++) {
-    let x = p1.x + (p2.x - p1.x) * (i / count);
-    let y = p1.y + (p2.y - p1.y) * (i / count);
-    let z = p1.z + (p2.z - p1.z) * (i / count);
+//   spawnLightning(level, startPos, endPos, 6);
 
-    level.spawnParticles(
-      "minecraft:electric_spark",
-      true,
-      x,
-      y,
-      z,
-      0,
-      0,
-      0,
-      1,
-      0,
-    );
-  }
-}
-
-ItemEvents.rightClicked("minecraft:breeze_rod", (e) => {
-  const { player, level, item } = e;
-
-  let startPos = player.position().add(0, 1.2, 0);
-  let range = 10.0;
-
-  let target = level
-    .getEntities()
-    .filter(
-      (entity) =>
-        entity.living &&
-        entity.uuid != player.uuid &&
-        entity.distanceToEntity(player) < range,
-    )[0];
-
-  if (!target) return;
-
-  let endPos;
-  if (target) {
-    endPos = target.position().add(0, target.eyeHeight / 1.5, 0);
-
-    target.potionEffects.add("minecraft:slowness", 40, 2, false, false);
-    target.potionEffects.add("minecraft:glowing", 20, 0, false, false);
-  }
-
-  spawnLightning(level, startPos, endPos, 6);
-
-  player.cooldowns.addCooldown(item, 5);
-});
+//   player.cooldowns.addCooldown(item, 5);
+// });
 
 ItemEvents.rightClicked("minecraft:blaze_rod", (e) => {
   const { player, level, item } = e;

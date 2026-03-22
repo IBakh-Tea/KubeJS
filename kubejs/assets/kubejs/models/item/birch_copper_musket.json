@@ -1,9 +1,0 @@
-{
-  "parent": "kubejs:item/base/musket",
-  "overrides": [
-    {
-      "predicate": { "charged": 1 },
-      "model": "kubejs:item/base/musket_loaded"
-    }
-  ]
-}

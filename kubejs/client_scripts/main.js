@@ -1,2 +1,18 @@
-// Visit the wiki for more info - https://kubejs.com/
-console.info("Hello, World! (Loaded client example script)");
+const keysToCheck = ["key.dash", "key.jump"];
+
+ClientEvents.tick((event) => {
+  const { player } = event;
+
+  keysToCheck.forEach((keyName) => {
+    const key = Client.options.keyMappings.find((k) => k.getName() === keyName);
+    if (key) {
+      let physicalKey = key.getKey().getName();
+      if (key.consumeClick()) {
+        player.sendData(keyName, {
+          message: keyName,
+          boundKey: physicalKey,
+        });
+      }
+    }
+  });
+});
