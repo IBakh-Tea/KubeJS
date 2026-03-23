@@ -1,0 +1,66 @@
+#Energy System Settings
+[energy]
+	#Maximum energy points
+	# Default: 20.0
+	# Range: 1.0 ~ 100.0
+	maxEnergy = 20.0
+	#Base energy regeneration rate per tick
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	baseRegenRate = 0.01
+	#Regeneration rate while walking per tick
+	# Default: 0.005
+	# Range: 0.0 ~ 1.0
+	walkRegenRate = 0.005
+	#Minimum regeneration rate (start of acceleration)
+	# Default: 0.005
+	# Range: 0.0 ~ 1.0
+	minRegenRate = 0.005
+	#Maximum regeneration rate (end of acceleration)
+	# Default: 0.16
+	# Range: 0.0 ~ 1.0
+	maxRegenRate = 0.16
+	#Very slow regeneration when completely exhausted
+	# Default: 1.0E-5
+	# Range: 0.0 ~ 1.0
+	exhaustedRegenRate = 1.0E-5
+	#Ticks to reach maximum regeneration rate
+	# Default: 100
+	# Range: 10 ~ 1000
+	maxAccelerationTime = 100
+	#Energy consumption while sprinting
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	sprintExhaustion = 0.05
+	#Energy consumption when jumping
+	# Default: 0.07
+	# Range: 0.0 ~ 5.0
+	jumpExhaustion = 0.07
+	#Energy consumption when attacking entities
+	# Default: 0.1
+	# Range: 0.0 ~ 5.0
+	attackExhaustion = 0.1
+	#Delay before regeneration starts after consumption
+	# Default: 20
+	# Range: 0 ~ 1000
+	regenDelay = 20
+	#Whether low energy affects movement speed
+	affectMovement = true
+	#Energy threshold below which movement slows down
+	# Default: 5.0
+	# Range: 1.0 ~ 20.0
+	lowEnergyThreshold = 5.0
+	#Movement slowdown when exhausted (0.5 = 50% slowdown)
+	# Default: 0.5
+	# Range: 0.1 ~ 0.9
+	exhaustionSlowdownAmount = 0.5
+	#Energy threshold for recovering from exhaustion effects
+	# Default: 5.0
+	# Range: 1.0 ~ 20.0
+	exhaustionRecoveryThreshold = 5.0
+	#Extra movement slowdown when exhausted (0.7 = 70% slowdown)
+	# Default: 0.7
+	# Range: 0.1 ~ 0.9
+	exhaustionExtraSlowdown = 0.7
+	#Whether to block jumping when exhausted
+	blockJumpWhenExhausted = true

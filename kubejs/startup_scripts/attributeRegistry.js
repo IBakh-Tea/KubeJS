@@ -1,13 +1,10 @@
 const $RangedAttribute = Java.loadClass(
-  "net.minecraft.world.entity.ai.attributes.RangedAttribute",
-);
-const ATTRIBUTE = Java.loadClass(
-  "net.minecraft.core.registries.BuiltInRegistries",
-).ATTRIBUTE;
-const $ResourceLocation = Java.loadClass(
-  "net.minecraft.resources.ResourceLocation",
-);
-const PLAYER = Java.loadClass("net.minecraft.world.entity.EntityType").PLAYER;
+    "net.minecraft.world.entity.ai.attributes.RangedAttribute",
+  ),
+  ATTRIBUTE = Java.loadClass(
+    "net.minecraft.core.registries.BuiltInRegistries",
+  ).ATTRIBUTE,
+  PLAYER = Java.loadClass("net.minecraft.world.entity.EntityType").PLAYER;
 
 StartupEvents.registry("minecraft:attribute", (e) => {
   e.createCustom("humanity", () =>

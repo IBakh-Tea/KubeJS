@@ -76,28 +76,28 @@ NetworkEvents.dataReceived("key.jump", (e) => {
   }
 });
 
-NetworkEvents.dataReceived("key.dash", (e) => {
-  const { player, level } = e;
+// NetworkEvents.dataReceived("key.dash", (e) => {
+//   const { player, level } = e;
 
-  const direction = player.getLookAngle();
-  const force = 1;
+//   const direction = player.getLookAngle();
+//   const force = 1;
 
-  level.spawnParticles(
-    "cloud",
-    true,
-    player.x,
-    player.y,
-    player.z,
-    0.1,
-    0.1,
-    0.1,
-    10,
-    0.05,
-  );
-  player.hurtMarked = true;
-  player.addMotion(direction.x * force, 0, direction.z * force);
-  player.potionEffects.add("minecraft:speed", 20 * 3, 1);
-});
+//   level.spawnParticles(
+//     "cloud",
+//     true,
+//     player.x,
+//     player.y,
+//     player.z,
+//     0.1,
+//     0.1,
+//     0.1,
+//     10,
+//     0.05,
+//   );
+//   player.hurtMarked = true;
+//   player.addMotion(direction.x * force, 0, direction.z * force);
+//   player.potionEffects.add("minecraft:speed", 20 * 3, 1);
+// });
 
 ItemEvents.rightClicked("kubejs:revolver", (e) => {
   const { item, player, level, hand } = e;
