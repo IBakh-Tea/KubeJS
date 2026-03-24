@@ -213,7 +213,6 @@ defaultconfigs/
 figura/
 local/
 logs/
-resourcepacks/
 saves/
 screenshots/
 server-resource-packs/
@@ -223,8 +222,8 @@ immersive_library/
 dynamic-resource-pack-cache/
 patchouli_books/
 crash-reports/
-datapacks/
 floatingdamagenumbers/
+datapacks/
 
 command_history.txt
 icon.png

@@ -217,56 +217,55 @@ global.newTier = [
 
 global.stringMaterials = { type: "string", color: "#CCCCCC" };
 
-global.StaminaConfig = {
-  // --- Основные настройки выносливости ---
-  staminaPerHalfHeart: 10,
-  bonusPerLevelOfVigourEnchantment: 40,
-  percentageReductionPerArmorPoint: 0.025,
-  boundToMaxHealth: false,
+// global.StaminaConfig = {
+//   // --- Основные настройки выносливости ---
+//   staminaPerHalfHeart: 10,
+//   percentageReductionPerArmorPoint: 0.025,
+//   boundToMaxHealth: false,
 
-  // --- Потребление ---
-  sprintConsumption: 1.0,
-  jumpConsumption: 10,
-  swimConsumption: 0.5,
-  conduitSwimmingModifier: 0.85,
-  mineConsumption: 0.0, // Установите > 0, чтобы включить
-  outOfCombatMultiplier: 0.8,
+//   // --- Потребление ---
+//   sprintConsumption: 1.0,
+//   jumpConsumption: 10.0,
+//   swimConsumption: 0.5,
+//   conduitSwimmingModifier: 0.85,
+//   mineConsumption: 0.0, // Установите > 0, чтобы включить
+//   outOfCombatMultiplier: 0.8,
 
-  // --- Регенерация ---
-  regenPerTick: 2.0,
-  modifierWhenLocked: 0.6,
-  modifierWhenInWater: 1.0,
-  modifierWhenInWaterWhenOffGround: true,
-  reductionPerArmorPoint: 0.025,
+//   // --- Регенерация ---
+//   regenPerTick: 2.0,
+//   modifierWhenLocked: 0.6,
+//   modifierWhenInWater: 1.0,
+//   modifierWhenInWaterWhenOffGround: true,
+//   reductionPerArmorPoint: 0.025,
 
-  // --- Блокировка выносливости ---
-  lockBelowMaxHealth: 4.0,
-  lockBelowHealthRatio: 0.2,
-  unlockAtHealthRatio: 0.4,
-  consumeHungerRatio: 0.05, // 0.05 = 1 очко голода/насыщения в секунду
+//   // --- Блокировка выносливости ---
+//   lockBelowMaxHealth: 4.0,
+//   lockBelowHealthRatio: 0.2,
+//   unlockAtHealthRatio: 0.4,
+//   consumeHungerRatio: 0.05, // 0.05 = 1 очко голода/насыщения в секунду
 
-  // --- Замедление ---
-  slowdown: {
-    sprinting: {
-      threshold: 0.2,
-      thresholdFlat: 40.0,
-      amount: 0.15,
-    },
-    whenLocked: {
-      enabled: true,
-      amount: 0.1,
-    },
-  },
+//   // --- Замедление ---
+//   slowdown: {
+//     sprinting: {
+//       threshold: 0.2,
+//       thresholdFlat: 40.0,
+//       amount: 0.15,
+//     },
+//     whenLocked: {
+//       enabled: true,
+//       amount: 0.1,
+//     },
+//   },
 
-  // --- Отключения ---
-  disableSprinting: false,
-  disableSwimming: false,
+//   // --- Отключения ---
+//   disableSprinting: false,
+//   disableSwimming: false,
 
-  // --- ID для модификаторов и эффектов ---
-  // UUID должны быть уникальными
-  lockSlowdownUUID: "b17cbf02-97f8-4c50-9cd1-6dc732593fed",
-  sprintSlowdownUUID: "d5c66a92-3f1f-44a2-95a6-1a9e66c6d8e5",
-};
+//   // --- ID для модификаторов и эффектов ---
+//   // UUID должны быть уникальными
+//   lockSlowdownUUID: "b17cbf02-97f8-4c50-9cd1-6dc732593fed",
+//   sprintSlowdownUUID: "d5c66a92-3f1f-44a2-95a6-1a9e66c6d8e5",
+// };
 
 global.capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
