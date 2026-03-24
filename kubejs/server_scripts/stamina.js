@@ -74,6 +74,15 @@
 //     const lastHit = player.persistentData.getLong("stamina_last_hit");
 //     return gameTime - lastHurt < 300 || gameTime - lastHit < 300;
 //   },
+
+//   // Синхронизация с клиентом для HUD
+//   sync(player) {
+//     player.sendData("stamina_sync", {
+//       current: this.get(player),
+//       max: this.getMax(player),
+//       locked: this.isLocked(player),
+//     });
+//   },
 // };
 
 // // --- Логика замедления ---
@@ -127,10 +136,14 @@
 //   }
 // }
 
+// // --- Обработчики событий ---
+
+// // Главный тик игрока
 // PlayerEvents.tick((e) => {
 //   const { player } = e;
 
 //   if (!player.isAlive() || player.isCreative() || player.isSpectator()) {
+//     console.log(player);
 //     return;
 //   }
 
@@ -140,35 +153,47 @@
 //     player.persistentData.putBoolean("stamina_locked", false);
 //   }
 
-//   // player.tell(Stamina.get(player));
+//   player.tell(player.persistentData.stamina_value);
 
 //   const maxStamina = Stamina.getMax(player);
 //   const currentStamina = Stamina.get(player);
 //   const isLocked = Stamina.isLocked(player);
+//   let needsSync = false;
 
 //   // Потребление
 //   if (player.isSprinting()) {
 //     let toConsume = player.isSwimming()
 //       ? C.swimConsumption
 //       : C.sprintConsumption;
-//     if (player.isSwimming() && player.hasEffect("minecraft:conduit_power"))
+//     if (player.isSwimming() && player.hasEffect("minecraft:conduit_power")) {
 //       toConsume *= C.conduitSwimmingModifier;
-//     if (!Stamina.isInCombat(player)) toConsume *= C.outOfCombatMultiplier;
-//     if (toConsume > 0) Stamina.consume(player, toConsume);
-//   } else if (currentStamina < maxStamina) {
+//     }
+//     if (!Stamina.isInCombat(player)) {
+//       toConsume *= C.outOfCombatMultiplier;
+//     }
+//     if (toConsume > 0) {
+//       Stamina.consume(player, toConsume);
+//       needsSync = true;
+//     }
+//   }
+//   // Регенерация
+//   else if (currentStamina < maxStamina) {
 //     let toRegen = C.regenPerTick;
-//     if (isLocked) toRegen *= C.modifierWhenLocked;
+//     if (isLocked) {
+//       toRegen *= C.modifierWhenLocked;
+//     }
 //     if (
 //       player.isInWater() &&
 //       (!player.onGround() || !C.modifierWhenInWaterWhenOffGround)
-//     )
+//     ) {
 //       toRegen *= C.modifierWhenInWater;
-
+//     }
 //     const armor = player.getAttribute("minecraft:generic.armor").value;
 //     toRegen *= 1.0 - armor * C.reductionPerArmorPoint;
 
 //     if (toRegen > 0) {
 //       Stamina.regen(player, toRegen);
+//       needsSync = true;
 //     }
 //   }
 
@@ -180,6 +205,7 @@
 //     currentStamina / maxStamina >= C.unlockAtHealthRatio
 //   ) {
 //     Stamina.unlock(player);
+//     needsSync = true;
 //   } else if (
 //     !isLocked &&
 //     (player.maxHealth <= C.lockBelowMaxHealth ||
@@ -187,10 +213,17 @@
 //   ) {
 //     Stamina.set(player, 0);
 //     Stamina.lock(player);
+//     needsSync = true;
 //   }
 
 //   // Применение замедления
 //   //   applySlowdown(player);
+
+//   // Синхронизация с клиентом, если были изменения
+//   if (needsSync || player.tickCount % 20 === 0) {
+//     // Периодическая синхронизация для надежности
+//     Stamina.sync(player);
+//   }
 // });
 
 // // // Отмена спринта
@@ -208,15 +241,13 @@
 // //   }
 // // });
 
-// // Потребление при прыжке
-// NetworkEvents.dataReceived("key.jump", (e) => {
-//   const { player } = e;
-
-//   if (!player.onGround()) return;
-//   player.tell("jump")
-
-//   Stamina.consume(player, C.jumpConsumption)
-// });
+// // // Потребление при прыжке
+// // PlayerEvents.jump((event) => {
+// //   const player = event.player;
+// //   if (player.level.isClientSide || C.jumpConsumption <= 0) return;
+// //   Stamina.consume(player, C.jumpConsumption);
+// //   Stamina.sync(player);
+// // });
 
 // // // Потребление/замедление при добыче
 // // PlayerEvents.breakSpeed((event) => {
