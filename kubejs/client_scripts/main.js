@@ -1,4 +1,4 @@
-const keysToCheck = ["key.jump"];
+const keysToCheck = ["key.dash", "key.jump"];
 
 ClientEvents.tick((event) => {
   const { player } = event;

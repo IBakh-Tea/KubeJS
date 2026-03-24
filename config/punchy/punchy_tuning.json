@@ -1,5 +1,151 @@
 {
   "item": {
+    "LEAVES_GROUP": {
+      "particles": [
+        {
+          "type": "minecraft:campfire_cosy_smoke",
+          "target": "all_faces",
+          "rate": 5,
+          "count": 1,
+          "offset": [
+            0,
+            0.1,
+            0
+          ],
+          "spread": [
+            0.1,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0.003,
+            0
+          ],
+          "life": 2,
+          "size": 0.06,
+          "size_end": 0.08,
+          "alpha": 0.95,
+          "alpha_end": 0,
+          "drag": 0.93,
+          "gravity": 0.3,
+          "fullbright": false,
+          "emit_full_anim": true,
+          "offset_space": "bone",
+          "velocity_space": "bone",
+          "ease": "linear",
+          "emit_ease": "linear"
+        },
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 15,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 1,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            0.35,
+            0.78,
+            0.30
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": [
+            "sprinting",
+            "mining",
+            "attacking"
+          ]
+        },
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 15,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 1,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            0.35,
+            0.78,
+            0.30
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": {
+            "falling": {
+              "min_blocks": 0
+            }
+          }
+        }
+      ]
+    },
+    "EMPTY_HAND": {
+      "armTransforms": {
+        "right": {
+          "scale": 1.0,
+          "offX": -0.02000001,
+          "offY": 0.18,
+          "offZ": -0.2,
+          "rotX": 0.0,
+          "rotY": -76.0,
+          "rotZ": 36.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        },
+        "left": {
+          "scale": 1.0,
+          "offX": 0.02000001,
+          "offY": 0.18,
+          "offZ": -0.2,
+          "rotX": 0.0,
+          "rotY": 76.0,
+          "rotZ": -36.0,
+          "pivotX": 0.0,
+          "pivotY": 0.0,
+          "pivotZ": 0.0
+        }
+      },
+      "customAnimation": [
+        {
+          "type": "mining",
+          "name": "punch_e_hand"
+        },
+        {
+          "type": "attack",
+          "var_1": "punch_e_hand"
+        }
+      ]
+    },
     "ARROW": {
       "transforms": {
         "right": {
@@ -31,7 +177,7 @@
     "FULL_BLOCK": {
       "transforms": {
         "right": {
-          "scale": 0.6600003,
+          "scale": 0.8600003,
           "offX": -0.19000001,
           "offY": 0.26000002,
           "offZ": 0.04,
@@ -43,7 +189,7 @@
           "pivotZ": 0.09999999
         },
         "left": {
-          "scale": 0.6600003,
+          "scale": 0.8600003,
           "offX": 0.19000001,
           "offY": 0.26000002,
           "offZ": 0.04,
@@ -569,6 +715,56 @@
       "pivotZ": 0.0
     }
   },
+  "paddleProxy": {
+    "raft_left": {
+      "scale": 0.5799998,
+      "offX": 0.3300001,
+      "offY": -0.079999976,
+      "offZ": -0.0899999,
+      "rotX": 22.0,
+      "rotY": -40.0,
+      "rotZ": 211.0,
+      "pivotX": 0.0,
+      "pivotY": 0.0,
+      "pivotZ": 0.0
+    },
+    "raft_right": {
+      "scale": 0.5799998,
+      "offX": -0.31999996,
+      "offY": 1.4901161E-8,
+      "offZ": -0.11999991,
+      "rotX": 40.0,
+      "rotY": -146.0,
+      "rotZ": 216.0,
+      "pivotX": 0.0,
+      "pivotY": 0.0,
+      "pivotZ": 0.0
+    },
+    "boat_right": {
+      "scale": 0.5799998,
+      "offX": -0.31999996,
+      "offY": 1.4901161E-8,
+      "offZ": -0.11999991,
+      "rotX": 40.0,
+      "rotY": -146.0,
+      "rotZ": 216.0,
+      "pivotX": 0.0,
+      "pivotY": 0.0,
+      "pivotZ": 0.0
+    },
+    "boat_left": {
+      "scale": 0.5799998,
+      "offX": 0.3300001,
+      "offY": -0.079999976,
+      "offZ": -0.0899999,
+      "rotX": 22.0,
+      "rotY": -40.0,
+      "rotZ": 211.0,
+      "pivotX": 0.0,
+      "pivotY": 0.0,
+      "pivotZ": 0.0
+    }
+  },
   "fishingLineProxy": {
     "rod_right": {
       "scale": 1.0,
@@ -596,6 +792,154 @@
     }
   },
   "itemSpecific": {
+    "minecraft:cherry_leaves": {
+      "particles": [
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 15,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 1,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            1.00,
+            0.62,
+            0.82
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": [
+            "sprinting",
+            "mining",
+            "attacking"
+          ]
+        },
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 15,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 1,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            1.00,
+            0.62,
+            0.82
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": {
+            "falling": {
+              "min_blocks": 0
+            }
+          }
+        }
+      ]
+    },
+    "minecraft:pale_oak_leaves": {
+      "particles": [
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 15,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 1,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            0.62,
+            0.66,
+            0.62
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": [
+            "sprinting",
+            "mining",
+            "attacking"
+          ]
+        },
+        {
+          "type": "minecraft:tinted_leaves",
+          "target": "all_faces",
+          "rate": 6,
+          "count": 5,
+          "spread": [
+            0.20,
+            0.01,
+            0.20
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "life": 5,
+          "size": 0.05,
+          "size_end": 0.05,
+          "alpha": 1,
+          "alpha_end": 0,
+          "drag": 0.985,
+          "gravity": -0.06,
+          "tint": [
+            0.62,
+            0.66,
+            0.62
+          ],
+          "full_day_light": true,
+          "fullbright": false,
+          "triggers": {
+            "falling": {
+              "min_blocks": 0
+            }
+          }
+        }
+      ]
+    },
     "minecraft:trident": {
       "kind": "TRIDENT",
       "customAnimation": [
@@ -711,6 +1055,20 @@
     }
   },
   "customGroups": [
+    {
+      "name": "LEAVES_GROUP",
+      "items": [
+        "minecraft:oak_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:dark_oak_leaves",
+        "minecraft:mangrove_leaves",
+        "minecraft:azalea_leaves",
+        "minecraft:flowering_azalea_leaves"
+      ]
+    },
     {
       "name": "THROW_GROUP",
       "items": [

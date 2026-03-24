@@ -1,0 +1,36 @@
+#Overlay Settings
+[overlay]
+	#Energy overlay position
+	#Allowed Values: ABOVE_FOOD, CUSTOM
+	position = "ABOVE_FOOD"
+	#Direction in which energy fills
+	#Allowed Values: LEFT_TO_RIGHT, RIGHT_TO_LEFT
+	direction = "RIGHT_TO_LEFT"
+	#Exact X coordinate for CUSTOM position
+	# Default: 0
+	# Range: -1000 ~ 10000
+	x = 0
+	#Exact Y coordinate for CUSTOM position
+	# Default: 0
+	# Range: -1000 ~ 10000
+	y = 0
+	#X offset from selected position
+	# Default: 0
+	# Range: -1000 ~ 1000
+	xOffset = 0
+	#Y offset from selected position
+	# Default: 0
+	# Range: -1000 ~ 1000
+	yOffset = 0
+	#Whether to show energy overlay
+	showOverlay = true
+	#Overlay scale (0.5 = 50%, 1.0 = 100%, 2.0 = 200%)
+	# Default: 1.0
+	# Range: 0.1 ~ 5.0
+	scale = 1.0
+	#Whether to raise energy icons when player is in water
+	waterOffsetEnabled = true
+	#Vertical offset for energy icons when in water (set to 0 to disable)
+	# Default: 10
+	# Range: 0 ~ 100
+	waterOffsetAmount = 10
