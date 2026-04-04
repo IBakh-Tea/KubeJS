@@ -1,168 +1,211 @@
-ItemEvents.rightClicked("kubejs:revolver", (e) => {
-  const { item, player, level, hand } = e;
+ItemEvents.rightClicked("minecraft:iron_ingot", (event) => {
+  const { player, level, target } = event;
 
-  if (!item.customData.cylinder) {
-    item.setCustomData({
-      cylinder: [
-        "minecraft:air",
-        "minecraft:air",
-        "minecraft:air",
-        "minecraft:air",
-        "minecraft:air",
-        "minecraft:air",
-      ],
-      currentIndex: 0,
-    });
-    player.tell(item.customData);
+  let spawnX = player.x;
+  let spawnY = player.y;
+  let spawnZ = player.z;
+
+  let armorStand = level.createEntity("minecraft:armor_stand");
+  armorStand.x = spawnX;
+  armorStand.y = spawnY;
+  armorStand.z = spawnZ;
+  armorStand.setRotation(0, 90);
+
+  armorStand.setNoGravity(true);
+  armorStand.setSilent(true);
+  armorStand.setInvisible(true);
+  armorStand.setInvulnerable(true);
+
+  armorStand.addTag("power_armor");
+
+  function createArmorPiece(id, modelData) {
+    let item = Item.of(id);
+
+    item.set("minecraft:custom_model_data", modelData);
+    item.set("minecraft:dyed_color", 15582404);
+    item.set("minecraft:unbreakable", {});
+    item.set("minecraft:custom_data", { power_armor_piece: true });
+    item.set("minecraft:item_name", " ");
+
+    return item;
   }
 
-  let cylinder = item.customData.cylinder,
-    currentIndex = parseInt(item.customData.currentIndex);
+  armorStand.setItemSlot(
+    "feet",
+    createArmorPiece("minecraft:leather_boots", 556001),
+  );
+  armorStand.setItemSlot(
+    "legs",
+    createArmorPiece("minecraft:leather_leggings", 556001),
+  );
+  armorStand.setItemSlot(
+    "chest",
+    createArmorPiece("minecraft:leather_chestplate", 556001),
+  );
 
-  let ammoCount = cylinder.filter((item) => item != "minecraft:air").length;
+  armorStand.spawn();
 
-  let offhandItem = player.getHeldItem("off_hand");
+  armorStand.setAttributeBaseValue("generic.scale", 1.2);
 
-  if (
-    ammoCount < 6 &&
-    offhandItem.id == "kubejs:pistol_round" &&
-    cylinder[currentIndex] == "minecraft:air"
-  ) {
-    cylinder[currentIndex] = offhandItem.id;
-    item.setCustomData({
-      cylinder: cylinder,
-      currentIndex: (currentIndex + 1) % cylinder.length,
-    });
-    player.cooldowns.addCooldown(item, 10);
-    offhandItem.shrink(1);
-    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
-  } else if (cylinder[currentIndex] == "minecraft:air") {
-    item.setCustomData({
-      cylinder: cylinder,
-      currentIndex: (currentIndex + 1) % cylinder.length,
-    });
-    global.playSound(level, player, "minecraft:block.tripwire.click_on");
-  } else if (
-    ammoCount > 0 &&
-    ammoCount <= 6 &&
-    cylinder[currentIndex] != "minecraft:air"
-  ) {
-    cylinder[currentIndex] = "minecraft:air";
-    item.setCustomData({
-      cylinder: cylinder,
-      currentIndex: (currentIndex + 1) % cylinder.length,
-    });
-    global.playSound(level, player, "minecraft:entity.shulker.shoot");
-    global.shootBullet(player, 25, 6, 1, 0.1);
-  }
+  armorStand.persistentData.putInt("suit_battery", 0);
+
+  let interaction = level.createEntity("minecraft:interaction");
+  interaction.x = spawnX;
+  interaction.y = spawnY + 0.05;
+  interaction.z = spawnZ;
+
+  player.tell(interaction.persistentData);
+  interaction.persistentData.putFloat("width", 0.5);
+  interaction.persistentData.putFloat("height", 1.5);
+  interaction.persistentData.putBoolean("response", true);
+  player.tell(interaction.persistentData);
+
+  interaction.addTag("power_armor_interactor");
+  interaction.spawn();
 });
 
-ItemEvents.rightClicked("kubejs:winchester", (e) => {
-  const { item, player, level, hand } = e;
+const GUNS = {
+  "kubejs:pistol": GunActions.flintlock({
+    ammo: "kubejs:cartridge",
+    damage: 10,
+    distance: 15,
+    bulletsPerShot: 1,
+    spread: 0.25,
+  }),
+  "kubejs:musket": GunActions.flintlock({
+    ammo: "kubejs:cartridge",
+    damage: 20,
+    distance: 25,
+    bulletsPerShot: 1,
+    spread: 0.25,
+  }),
+  "kubejs:blunderbuss": GunActions.flintlock({
+    ammo: "kubejs:buckshot",
+    damage: 1,
+    distance: 10,
+    bulletsPerShot: 10,
+    spread: 0.5,
+  }),
+  "kubejs:revolver": GunActions.revolver({
+    ammo: "kubejs:pistol_round",
+    damage: 11.5,
+    distance: 25,
+    spread: 0.1,
+  }),
+  "kubejs:trapdoor_rifle": GunActions.directLoader({
+    ammo: "kubejs:rifle_round",
+    capacity: 1,
+    damage: 21,
+    distance: 55,
+    bulletsPerShot: 1,
+    spread: 0,
+    allowDouble: false,
+  }),
+  "kubejs:break_action_coachgun": GunActions.directLoader({
+    ammo: "kubejs:shotgun_shell",
+    capacity: 2,
+    damage: 1.8,
+    distance: 8,
+    bulletsPerShot: 10,
+    spread: 0.5,
+    allowDouble: true,
+  }),
+  "kubejs:pump_action_shotgun": GunActions.directLoader({
+    ammo: "kubejs:shotgun_shell",
+    capacity: 1,
+    damage: 1.5,
+    distance: 10,
+    bulletsPerShot: 10,
+    spread: 0.5,
+    allowDouble: false,
+  }),
+  "kubejs:bolt_action_rifle": GunActions.directLoader({
+    ammo: "kubejs:rifle_round",
+    capacity: 4,
+    damage: 16,
+    distance: 55,
+    bulletsPerShot: 1,
+    spread: 0,
+    allowDouble: false,
+  }),
+  "kubejs:handgun": GunActions.magazine({
+    magazine: [
+      "kubejs:standard_handgun_magazine",
+      "kubejs:large_handgun_magazine",
+    ],
+    muzzle: {
+      silencer: "kubejs:handgun_silencer",
+      muzzle_brake: "kubejs:handgun_muzzle_brake",
+    },
+    underbarrel: {},
+    stock: {},
+    handle: {},
+    damage: 9,
+    distance: 25,
+    spread: 0.1,
+  }),
+  "kubejs:assault_rifle": GunActions.magazine({
+    magazine: [
+      "kubejs:standard_assault_rifle_magazine",
+      "kubejs:drum_assault_rifle_magazine",
+    ],
+    muzzle: {
+      silencer: "kubejs:assault_rifle_silencer",
+      muzzle_brake: "kubejs:assault_rifle_muzzle_brake",
+    },
+    handle: {},
+    underbarrel: {
+      grip: "kubejs:assault_rifle_grip",
+      handguard: "kubejs:assault_rifle_handguard",
+    },
+    stock: {
+      full_stock: "kubejs:assault_rifle_stock",
+    },
+    damage: 6.5,
+    distance: 25,
+    spread: 0.1,
+  }),
+};
 
-  let tube_magazine = item.customData.tube_magazine || [];
+const MAGS = {
+  "kubejs:standard_handgun_magazine": MagActions({
+    clipSize: 12,
+    clipType: "kubejs:pistol_round",
+    reloadTime: 10,
+  }),
+  "kubejs:large_handgun_magazine": MagActions({
+    clipSize: 24,
+    clipType: "kubejs:pistol_round",
+    reloadTime: 15,
+  }),
+  "kubejs:standard_assault_rifle_magazine": MagActions({
+    clipSize: 50,
+    clipType: "kubejs:rifle_round",
+    reloadTime: 15,
+  }),
+  "kubejs:drum_assault_rifle_magazine": MagActions({
+    clipSize: 100,
+    clipType: "kubejs:rifle_round",
+    reloadTime: 15,
+  }),
+};
 
-  let ammoCount = tube_magazine.length;
+ItemEvents.rightClicked((e) => {
+  const { player, item } = e;
 
-  let offhandItem = player.getHeldItem("off_hand");
+  if (item.id == player.getHeldItem("main_hand").id) {
+    let gun = GUNS[item.id];
+    if (gun) {
+      gun(e);
+      return;
+    }
 
-  if (ammoCount < 12 && offhandItem.id == "kubejs:rifle_round") {
-    tube_magazine.push(offhandItem.id);
-    item.setCustomData({ tube_magazine: tube_magazine });
-    player.cooldowns.addCooldown(item, 10);
-    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
-    offhandItem.shrink(1);
-  } else if (
-    ammoCount > 0 &&
-    ammoCount <= 12 &&
-    offhandItem.id == "minecraft:air"
-  ) {
-    tube_magazine.shift();
-    item.setCustomData({ tube_magazine: tube_magazine });
-    player.cooldowns.addCooldown(item, 10);
-    global.playSound(level, player, "minecraft:entity.shulker.shoot");
-    global.shootBullet(player, 55, 10, 1, 0);
-  } else if (ammoCount == 0) {
-    global.playSound(level, player, "minecraft:block.tripwire.click_on");
+    let mag = MAGS[item.id];
+    if (mag) {
+      mag(e);
+      return;
+    }
   }
-});
-
-ItemEvents.rightClicked("kubejs:double_barrel_shotgun", (e) => {
-  const { item, player, level, hand } = e;
-
-  let chamber = item.customData.chamber || [];
-
-  let ammoCount = chamber.length;
-
-  let offhandItem = player.getHeldItem("off_hand");
-
-  if (ammoCount < 2 && offhandItem.id == "kubejs:shotgun_shell") {
-    chamber.push(offhandItem.id);
-    item.setCustomData({ chamber: chamber });
-    player.cooldowns.addCooldown(item, 10);
-    global.playSound(level, player, "minecraft:block.wooden_button.click_on");
-    offhandItem.shrink(1);
-  } else if (
-    ammoCount == 2 &&
-    offhandItem.id == "minecraft:air" &&
-    player.shiftKeyDown
-  ) {
-    chamber = [];
-    item.setCustomData({ chamber: chamber });
-    player.cooldowns.addCooldown(item, 10);
-    global.playSound(level, player, "minecraft:entity.shulker.shoot");
-    global.shootBullet(player, 8, 1, 20, 0.5);
-  } else if (
-    ammoCount > 0 &&
-    ammoCount <= 2 &&
-    offhandItem.id == "minecraft:air"
-  ) {
-    chamber.shift();
-    item.setCustomData({ chamber: chamber });
-    player.cooldowns.addCooldown(item, 10);
-    global.playSound(level, player, "minecraft:entity.shulker.shoot");
-    global.shootBullet(player, 8, 1, 10, 0.5);
-  } else if (ammoCount == 0) {
-    global.playSound(level, player, "minecraft:block.tripwire.click_on");
-  }
-});
-
-ItemEvents.rightClicked("kubejs:pistol", (e) => {
-  const { item, player, hand } = e;
-  let customData = item.customData;
-  player.tell(customData);
-  let stage = parseInt(customData.stage) || 0;
-  player.tell(stage);
-
-  let offhandItem = player.getHeldItem("off_hand");
-
-  if (stage == 0 && offhandItem.id == "minecraft:gunpowder") {
-    customData = { stage: 1 };
-    offhandItem.count--;
-    player.cooldowns.addCooldown(item, 5);
-    player.setStatusMessage("Засыпан порох...");
-  } else if (stage == 1 && offhandItem.id == "minecraft:iron_nugget") {
-    customData = { stage: 2 };
-    offhandItem.count--;
-    player.cooldowns.addCooldown(item, 5);
-    player.setStatusMessage("Пуля вставлена...");
-  } else if (stage == 2 && offhandItem.id == "minecraft:stick") {
-    customData = { stage: 3 };
-    player.cooldowns.addCooldown(item, 5);
-    player.setStatusMessage("Оружие взведено!");
-  } else if (stage == 3) {
-    customData = { stage: 0 };
-    player.setStatusMessage("Выстрел");
-    let ray = player.rayTrace(8);
-
-    let entity = ray.entity;
-    player.tell(entity);
-    entity.attack(player.damageSources().generic(), 2);
-  }
-
-  player.tell(stage);
-
-  item.customData = customData;
 });
 
 ItemEvents.rightClicked("minecraft:rotten_flesh", (e) => {
@@ -183,6 +226,7 @@ ItemEvents.rightClicked("minecraft:rotten_flesh", (e) => {
   server.runCommandSilent(`team modify ${teamName} friendlyFire false`);
 
   zombie.spawn();
+  player.setStatusMessage("Зомби призван");
 });
 
 ItemEvents.rightClicked("minecraft:bone", (e) => {

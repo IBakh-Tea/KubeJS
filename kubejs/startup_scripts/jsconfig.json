@@ -1,6 +1,12 @@
 {
-  "include": ["./**/*.js", "./**/*.ts"],
+  "include": [
+    "./**/*.js",
+    "./**/*.ts",
+    "../../.probe/startup/generated-startup/*.d.ts",
+    "../../.probe/packages/generated-package/*.d.ts"
+  ],
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "module": "none",
     "moduleResolution": "node",
     "allowJs": true,

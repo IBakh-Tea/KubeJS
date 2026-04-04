@@ -1,0 +1,535 @@
+{
+  "musketfire": {
+    "subtitle": "subtitles.musketfire",
+    "sounds": [
+      {
+        "name": "flintnpowder:musketfire1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:musketfire2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:musketfire3",
+        "stream": false
+      }
+    ]
+  },
+  "ramrod": {
+    "sounds": [
+      {
+        "name": "flintnpowder:ramrod",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:ramrod2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:ramrod3",
+        "stream": false
+      }
+    ]
+  },
+  "flintprime": {
+    "sounds": [
+      {
+        "name": "flintnpowder:flintprime",
+        "stream": false
+      }
+    ]
+  },
+  "flintstrike": {
+    "sounds": [
+      {
+        "name": "flintnpowder:flintstrike",
+        "stream": false
+      }
+    ]
+  },
+  "gunswing": {
+    "sounds": [
+      {
+        "name": "flintnpowder:gunswing1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:gunswing2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:gunswing3",
+        "stream": false
+      }
+    ]
+  },
+  "stockstrike": {
+    "subtitle": "subtitles.stockstrike",
+    "sounds": [
+      {
+        "name": "flintnpowder:gunpunch",
+        "stream": false
+      }
+    ]
+  },
+  "handgonne": {
+    "subtitle": "subtitles.handgonne",
+    "sounds": [
+      {
+        "name": "flintnpowder:handgonneshot",
+        "stream": false
+      }
+    ]
+  },
+  "pistol": {
+    "subtitle": "subtitles.pistol",
+    "sounds": [
+      {
+        "name": "flintnpowder:pistolfire1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:pistolfire2",
+        "stream": false
+      }
+    ]
+  },
+  "bulletimpact": {
+    "subtitle": "subtitles.bulletimpact",
+    "sounds": [
+      {
+        "name": "flintnpowder:hpbulletimpact1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:hpbulletimpact2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:hpbulletimpact3",
+        "stream": false
+      }
+    ]
+  },
+  "biggameshot": {
+    "subtitle": "subtitles.biggameshot",
+    "sounds": [
+      {
+        "name": "flintnpowder:biggame1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:biggame2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:biggame3",
+        "stream": false
+      }
+    ]
+  },
+  "copperbuffhorn": {
+    "subtitle": "subtitles.copperbuffhorn",
+    "sounds": [
+      {
+        "name": "flintnpowder:copperbuffhorn",
+        "stream": false
+      }
+    ]
+  },
+  "ironbuffhorn": {
+    "subtitle": "subtitles.ironbuffhorn",
+    "sounds": [
+      {
+        "name": "flintnpowder:ironbuffhorn",
+        "stream": false
+      }
+    ]
+  },
+  "goldenbuffhorn": {
+    "subtitle": "subtitles.goldenbuffhorn",
+    "sounds": [
+      {
+        "name": "flintnpowder:goldenbuffhorn",
+        "stream": false
+      }
+    ]
+  },
+  "netheritedarkhorn": {
+    "subtitle": "subtitles.netheritedarkhorn",
+    "sounds": [
+      {
+        "name": "flintnpowder:netheritedarkhorn",
+        "stream": false
+      }
+    ]
+  },
+  "copperdrum": {
+    "subtitle": "subtitles.copperdrum",
+    "sounds": [
+      {
+        "name": "flintnpowder:copper_drum",
+        "stream": false
+      }
+    ]
+  },
+  "irondrum": {
+    "subtitle": "subtitles.irondrum",
+    "sounds": [
+      {
+        "name": "flintnpowder:iron_drum",
+        "stream": false
+      }
+    ]
+  },
+  "goldendrum": {
+    "subtitle": "subtitles.goldendrum",
+    "sounds": [
+      {
+        "name": "flintnpowder:golden_drum",
+        "stream": false
+      }
+    ]
+  },
+  "netheritedrumcymbals": {
+    "subtitle": "subtitles.netheritedrumcymbals",
+    "sounds": [
+      {
+        "name": "flintnpowder:netherite_drum_cymbals",
+        "stream": false
+      }
+    ]
+  },
+  "netheritegong": {
+    "subtitle": "subtitles.netheritegong",
+    "sounds": [
+      {
+        "name": "flintnpowder:netherite_drum_gong",
+        "stream": false
+      }
+    ]
+  },
+  "shotgunshell": {
+    "subtitle": "subtitles.shotgunshell",
+    "sounds": [
+      {
+        "name": "flintnpowder:shotgun_reload",
+        "stream": false
+      }
+    ]
+  },
+  "shotgunpumpbackward": {
+    "sounds": [
+      {
+        "name": "flintnpowder:shotgunpumpbackward",
+        "stream": false
+      }
+    ]
+  },
+  "shotgunpumpforward": {
+    "subtitle": "subtitles.shotgunpumpforward",
+    "sounds": [
+      {
+        "name": "flintnpowder:shotgunpumpforward",
+        "stream": false
+      }
+    ]
+  },
+  "rifleround": {
+    "subtitle": "subtitles.rifleround",
+    "sounds": [
+      {
+        "name": "flintnpowder:rifle_reloading",
+        "stream": false
+      }
+    ]
+  },
+  "rifleboltbackward": {
+    "subtitle": "subtitles.rifleboltbackward",
+    "sounds": [
+      {
+        "name": "flintnpowder:rifleboltbackward",
+        "stream": false
+      }
+    ]
+  },
+  "rifleboltforward": {
+    "subtitle": "subtitles.rifleboltforward",
+    "sounds": [
+      {
+        "name": "flintnpowder:rifleboltforward",
+        "stream": false
+      }
+    ]
+  },
+  "pistolmagin": {
+    "subtitle": "subtitles.pistolmagin",
+    "sounds": [
+      {
+        "name": "flintnpowder:pistolmagin",
+        "stream": false
+      }
+    ]
+  },
+  "pistolcockbackward": {
+    "subtitle": "subtitles.pistolcockbackward",
+    "sounds": [
+      {
+        "name": "flintnpowder:pistolcockbackwards",
+        "stream": false
+      }
+    ]
+  },
+  "pistolcockforward": {
+    "subtitle": "subtitles.pistolcockforward",
+    "sounds": [
+      {
+        "name": "flintnpowder:pistolcockforward",
+        "stream": false
+      }
+    ]
+  },
+  "smgfire": {
+    "subtitle": "subtitles.smgfire",
+    "sounds": [
+      {
+        "name": "flintnpowder:smgfire",
+        "stream": false
+      }
+    ]
+  },
+  "riflemagout": {
+    "subtitle": "subtitles.riflemagout",
+    "sounds": [
+      {
+        "name": "flintnpowder:armagout",
+        "stream": false
+      }
+    ]
+  },
+  "riflecockbackward": {
+    "subtitle": "subtitles.riflecockbackward",
+    "sounds": [
+      {
+        "name": "flintnpowder:arcockbackwards",
+        "stream": false
+      }
+    ]
+  },
+  "riflecockforward": {
+    "subtitle": "subtitles.riflecockforward",
+    "sounds": [
+      {
+        "name": "flintnpowder:arcockforwards",
+        "stream": false
+      }
+    ]
+  },
+  "battlerifle": {
+    "subtitle": "subtitles.battlerifle",
+    "sounds": [
+      {
+        "name": "flintnpowder:arfire",
+        "stream": false
+      }
+    ]
+  },
+  "bullethit": {
+    "subtitle": "subtitles.bullethit",
+    "sounds": [
+      {
+        "name": "flintnpowder:bullethit1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit3",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit4",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit5",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit6",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit7",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:bullethit8",
+        "stream": false
+      }
+    ]
+  },
+  "music74": {
+    "subtitle": "subtitles.music74",
+    "sounds": [
+      {
+        "name": "flintnpowder:74",
+        "stream": false
+      }
+    ]
+  },
+  "distantpistolshot": {
+    "subtitle": "subtitles.distantpistolshot",
+    "sounds": [
+      {
+        "name": "flintnpowder:distantpistolshot",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantpistolshot2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantpistolshot3",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantpistolshot4",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantpistolshot5",
+        "stream": false
+      }
+    ]
+  },
+  "distantgunshot": {
+    "subtitle": "subtitles.distantgunshot",
+    "sounds": [
+      {
+        "name": "flintnpowder:distantgunshot",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantgunshot2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantgunshot3",
+        "stream": false
+      }
+    ]
+  },
+  "distantgunshotheavy": {
+    "subtitle": "subtitles.distantgunshotheavy",
+    "sounds": [
+      {
+        "name": "flintnpowder:distantgunshotheavy",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantgunshotheavy2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:distantgunshotheavy3",
+        "stream": false
+      }
+    ]
+  },
+  "autoshotgun": {
+    "subtitle": "subtitles.autoshotgun",
+    "sounds": [
+      {
+        "name": "flintnpowder:autoshotgun",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:autoshotgun2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:autoshotgun3",
+        "stream": false
+      }
+    ]
+  },
+  "autoshotgunmagout": {
+    "subtitle": "subtitles.autoshotgunmagout",
+    "sounds": [
+      {
+        "name": "flintnpowder:autoshotgunmagout",
+        "stream": false
+      }
+    ]
+  },
+  "shotgunmagin": {
+    "subtitle": "subtitles.shotgunmagin",
+    "sounds": [
+      {
+        "name": "flintnpowder:autoshotgunmagin",
+        "stream": false
+      }
+    ]
+  },
+  "autoshotgunboltbackward": {
+    "subtitle": "subtitles.autoshotgunboltbackward",
+    "sounds": [
+      {
+        "name": "flintnpowder:autoshotgunboltbackward",
+        "stream": false
+      }
+    ]
+  },
+  "autoshotgunboltforward": {
+    "subtitle": "subtitles.autoshotgunboltforward",
+    "sounds": [
+      {
+        "name": "flintnpowder:autoshotgunboltforward",
+        "stream": false
+      }
+    ]
+  },
+  "blunderbuss": {
+    "subtitle": "subtitles.blunderbuss",
+    "sounds": [
+      {
+        "name": "flintnpowder:blunderbuss2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:blunderbuss",
+        "stream": false
+      }
+    ]
+  },
+  "dryfire": {
+    "subtitle": "subtitles.dryfire",
+    "sounds": [
+      {
+        "name": "flintnpowder:dryfire",
+        "stream": false
+      }
+    ]
+  },
+  "rifle": {
+    "subtitle": "subtitles.rifle",
+    "sounds": [
+      {
+        "name": "flintnpowder:riflefire1",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:riflefire2",
+        "stream": false
+      },
+      {
+        "name": "flintnpowder:riflefire3",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kubejs:item/handgun/handgun_empty",
+    "layer1": "kubejs:item/handgun/handgun",
+    "layer2": "kubejs:item/handgun/handgun_muzzle_brake",
+    "layer3": "kubejs:item/handgun/handgun_silencer"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 45],
+      "translation": [0, 1.75, 0.5],
+      "scale": [1, 1, 0.5]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, -45],
+      "translation": [0, 1.75, 0.5],
+      "scale": [1, 1, 0.5]
+    },
+    "firstperson_righthand": {
+      "rotation": [-38, -90, 0],
+      "translation": [1.5, 1.75, 0]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -38],
+      "translation": [1.5, 1.75, 0]
+    },
+    "ground": {
+      "translation": [0, 2, 0],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

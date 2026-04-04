@@ -1,0 +1,47 @@
+enabled = true
+remove_damage_indicator_hearts = true
+round_damage_values = false
+
+[animation]
+	# Default: 16
+	# Range: > 0
+	duration = 16
+
+	[animation.size]
+		# Default: 0.5
+		# Range: 0.0 ~ 3.4028234663852886E38
+		min = 0.5
+		# Default: 1.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		max = 1.0
+
+	[animation.brightness]
+		# Default: 0.85
+		# Range: 0.0 ~ 1.0
+		min = 0.85
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		max = 1.0
+
+	[animation.opacity]
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		min = 0.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		max = 1.0
+
+	[animation.speed]
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		min = 0.0
+		# Default: 1.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		max = 1.0
+
+	#Colors can be Minecraft color name (GOLD), hex code (#FFAA00), or NONE to disable damage numbers for that type
+	[color.damage]
+		default = "GOLD"
+
+	[color.heal]
+		default = "DARK_GREEN"

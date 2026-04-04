@@ -15,15 +15,6 @@ StartupEvents.registry("minecraft:attribute", (e) => {
       100.0,
     ).setSyncable(true),
   );
-
-  e.createCustom("bonus_stamina", () =>
-    new $RangedAttribute(
-      "attribute.name.kubejs.bonus_stamina",
-      0.0,
-      0.0,
-      0.0,
-    ).setSyncable(true),
-  );
 });
 
 NativeEvents.onEvent(
@@ -31,10 +22,8 @@ NativeEvents.onEvent(
     "net.neoforged.neoforge.event.entity.EntityAttributeModificationEvent",
   ),
   (e) => {
-    const humanityHolder = ATTRIBUTE.getHolder("kubejs:humanity").get(),
-      staminaHolder = ATTRIBUTE.getHolder("kubejs:bonus_stamina").get();
+    const humanityHolder = ATTRIBUTE.getHolder("kubejs:humanity").get();
 
     e.add(PLAYER, humanityHolder);
-    e.add(PLAYER, staminaHolder);
   },
 );

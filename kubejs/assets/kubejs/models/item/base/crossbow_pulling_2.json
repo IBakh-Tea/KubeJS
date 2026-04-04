@@ -1,9 +1,0 @@
-{
-  "parent": "kubejs:item/base/crossbow",
-  "textures": {
-    "layer0": "kubejs:item/crossbow/stock",
-    "layer1": "kubejs:item/crossbow/stave",
-    "layer2": "kubejs:item/crossbow/attachment",
-    "layer3": "kubejs:item/crossbow/string_2"
-  }
-}

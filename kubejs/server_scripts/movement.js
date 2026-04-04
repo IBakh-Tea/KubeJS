@@ -3,10 +3,6 @@ const Vec3 = Java.loadClass("net.minecraft.world.phys.Vec3");
 NetworkEvents.dataReceived("key.jump", (e) => {
   const { player, level } = e;
 
-  if (player.onGround()) {
-    player.persistentData.putBoolean("double_jump_used", false);
-    e.cancel();
-  }
   if (player.isInWater()) e.cancel();
 
   let used = player.persistentData.getBoolean("double_jump_used");
@@ -15,7 +11,7 @@ NetworkEvents.dataReceived("key.jump", (e) => {
 
   if (!used) {
     switch (true) {
-      case player.motionY <= 0:
+      case player.motionY < 0:
         player.persistentData.putBoolean("double_jump_used", true);
 
         newMotion = new Vec3(
@@ -111,6 +107,10 @@ PlayerEvents.tick((e) => {
     cooldown--;
     player.persistentData.putFloat("dash_cooldown", cooldown);
   } else {
-    player.persistentData.putBoolean("dash_used", false)
+    player.persistentData.putBoolean("dash_used", false);
+  }
+
+  if (player.onGround()) {
+    player.persistentData.putBoolean("double_jump_used", false);
   }
 });

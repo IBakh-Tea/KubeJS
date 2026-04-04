@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:item/base/blunderbuss",
+  "textures": {
+    "layer0": "kubejs:item/blunderbuss/handle",
+    "layer1": "kubejs:item/blunderbuss/barrel_loaded"
+  }
+}

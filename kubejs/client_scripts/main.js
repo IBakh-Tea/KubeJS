@@ -7,7 +7,7 @@ ClientEvents.tick((event) => {
     const key = Client.options.keyMappings.find((k) => k.getName() === keyName);
     if (key) {
       let physicalKey = key.getKey().getName();
-      if (key.consumeClick()) {
+      if (key.isDown()) {
         player.sendData(keyName, {
           message: keyName,
           boundKey: physicalKey,
