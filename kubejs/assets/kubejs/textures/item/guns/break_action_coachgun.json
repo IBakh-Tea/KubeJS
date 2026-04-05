@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [44, 14],
 	"textures": {
-		"0": "flintnpowder:item/coachgun",
-		"particle": "flintnpowder:item/coachgun"
+		"0": "flintnpowder:item/coachgun"
 	},
 	"elements": [
 		{
@@ -227,9 +226,6 @@
 				"down": {"uv": [7.27273, 0, 13.45455, 2.28571], "rotation": 90, "texture": "#0"}
 			}
 		}
-	],
-	"overrides": [
-		{"predicate": {"flintnpowder:break_action_coachgun_opened": 1}, "model": "flintnpowder:item/break_action_coachgun_0"}
 	],
 	"display": {
 		"thirdperson_righthand": {

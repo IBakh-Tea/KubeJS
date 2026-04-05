@@ -4,8 +4,7 @@
 	"texture_size": [43, 18],
 	"textures": {
 		"0": "flintnpowder:item/boltactionrifle",
-		"1": "flintnpowder:item/bayonet",
-		"particle": "flintnpowder:item/boltactionrifle"
+		"1": "flintnpowder:item/bayonet"
 	},
 	"elements": [
 		{
@@ -250,9 +249,6 @@
 				"down": {"uv": [5.95349, 2.66667, 6.69767, 3.55556], "rotation": 90, "texture": "#0"}
 			}
 		}
-	],
-	"overrides": [
-		{"predicate": {"flintnpowder:bolt_action_rifle_bolting": 1}, "model": "flintnpowder:item/bolt_action_rifle_0"}
 	],
 	"display": {
 		"thirdperson_righthand": {

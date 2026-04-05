@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [30, 14],
 	"textures": {
-		"0": "flintnpowder:item/volleygun",
-		"particle": "flintnpowder:item/volleygun"
+		"0": "flintnpowder:item/volleygun"
 	},
 	"elements": [
 		{

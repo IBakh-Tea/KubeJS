@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [44, 18],
 	"textures": {
-		"0": "flintnpowder:item/shotgun",
-		"particle": "flintnpowder:item/shotgun"
+		"0": "flintnpowder:item/shotgun"
 	},
 	"elements": [
 		{
@@ -130,9 +129,6 @@
 				"down": {"uv": [11.63636, 13.33333, 13.81818, 15.11111], "rotation": 90, "texture": "#0"}
 			}
 		}
-	],
-	"overrides": [
-		{"predicate": {"flintnpowder:shotgun_pumping": 1}, "model": "flintnpowder:item/shotgun_0"}
 	],
 	"display": {
 		"thirdperson_righthand": {

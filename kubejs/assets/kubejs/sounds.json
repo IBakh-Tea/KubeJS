@@ -3,15 +3,15 @@
     "subtitle": "subtitles.musketfire",
     "sounds": [
       {
-        "name": "flintnpowder:musketfire1",
+        "name": "kubejs:musketfire1",
         "stream": false
       },
       {
-        "name": "flintnpowder:musketfire2",
+        "name": "kubejs:musketfire2",
         "stream": false
       },
       {
-        "name": "flintnpowder:musketfire3",
+        "name": "kubejs:musketfire3",
         "stream": false
       }
     ]
@@ -19,15 +19,15 @@
   "ramrod": {
     "sounds": [
       {
-        "name": "flintnpowder:ramrod",
+        "name": "kubejs:ramrod",
         "stream": false
       },
       {
-        "name": "flintnpowder:ramrod2",
+        "name": "kubejs:ramrod2",
         "stream": false
       },
       {
-        "name": "flintnpowder:ramrod3",
+        "name": "kubejs:ramrod3",
         "stream": false
       }
     ]
@@ -35,7 +35,7 @@
   "flintprime": {
     "sounds": [
       {
-        "name": "flintnpowder:flintprime",
+        "name": "kubejs:flintprime",
         "stream": false
       }
     ]
@@ -43,7 +43,7 @@
   "flintstrike": {
     "sounds": [
       {
-        "name": "flintnpowder:flintstrike",
+        "name": "kubejs:flintstrike",
         "stream": false
       }
     ]
@@ -51,15 +51,15 @@
   "gunswing": {
     "sounds": [
       {
-        "name": "flintnpowder:gunswing1",
+        "name": "kubejs:gunswing1",
         "stream": false
       },
       {
-        "name": "flintnpowder:gunswing2",
+        "name": "kubejs:gunswing2",
         "stream": false
       },
       {
-        "name": "flintnpowder:gunswing3",
+        "name": "kubejs:gunswing3",
         "stream": false
       }
     ]
@@ -68,7 +68,7 @@
     "subtitle": "subtitles.stockstrike",
     "sounds": [
       {
-        "name": "flintnpowder:gunpunch",
+        "name": "kubejs:gunpunch",
         "stream": false
       }
     ]
@@ -77,7 +77,7 @@
     "subtitle": "subtitles.handgonne",
     "sounds": [
       {
-        "name": "flintnpowder:handgonneshot",
+        "name": "kubejs:handgonneshot",
         "stream": false
       }
     ]
@@ -86,11 +86,11 @@
     "subtitle": "subtitles.pistol",
     "sounds": [
       {
-        "name": "flintnpowder:pistolfire1",
+        "name": "kubejs:pistolfire1",
         "stream": false
       },
       {
-        "name": "flintnpowder:pistolfire2",
+        "name": "kubejs:pistolfire2",
         "stream": false
       }
     ]
@@ -99,15 +99,15 @@
     "subtitle": "subtitles.bulletimpact",
     "sounds": [
       {
-        "name": "flintnpowder:hpbulletimpact1",
+        "name": "kubejs:hpbulletimpact1",
         "stream": false
       },
       {
-        "name": "flintnpowder:hpbulletimpact2",
+        "name": "kubejs:hpbulletimpact2",
         "stream": false
       },
       {
-        "name": "flintnpowder:hpbulletimpact3",
+        "name": "kubejs:hpbulletimpact3",
         "stream": false
       }
     ]
@@ -116,15 +116,15 @@
     "subtitle": "subtitles.biggameshot",
     "sounds": [
       {
-        "name": "flintnpowder:biggame1",
+        "name": "kubejs:biggame1",
         "stream": false
       },
       {
-        "name": "flintnpowder:biggame2",
+        "name": "kubejs:biggame2",
         "stream": false
       },
       {
-        "name": "flintnpowder:biggame3",
+        "name": "kubejs:biggame3",
         "stream": false
       }
     ]
@@ -133,7 +133,7 @@
     "subtitle": "subtitles.copperbuffhorn",
     "sounds": [
       {
-        "name": "flintnpowder:copperbuffhorn",
+        "name": "kubejs:copperbuffhorn",
         "stream": false
       }
     ]
@@ -142,7 +142,7 @@
     "subtitle": "subtitles.ironbuffhorn",
     "sounds": [
       {
-        "name": "flintnpowder:ironbuffhorn",
+        "name": "kubejs:ironbuffhorn",
         "stream": false
       }
     ]
@@ -151,7 +151,7 @@
     "subtitle": "subtitles.goldenbuffhorn",
     "sounds": [
       {
-        "name": "flintnpowder:goldenbuffhorn",
+        "name": "kubejs:goldenbuffhorn",
         "stream": false
       }
     ]
@@ -160,7 +160,7 @@
     "subtitle": "subtitles.netheritedarkhorn",
     "sounds": [
       {
-        "name": "flintnpowder:netheritedarkhorn",
+        "name": "kubejs:netheritedarkhorn",
         "stream": false
       }
     ]
@@ -169,7 +169,7 @@
     "subtitle": "subtitles.copperdrum",
     "sounds": [
       {
-        "name": "flintnpowder:copper_drum",
+        "name": "kubejs:copper_drum",
         "stream": false
       }
     ]
@@ -178,7 +178,7 @@
     "subtitle": "subtitles.irondrum",
     "sounds": [
       {
-        "name": "flintnpowder:iron_drum",
+        "name": "kubejs:iron_drum",
         "stream": false
       }
     ]
@@ -187,7 +187,7 @@
     "subtitle": "subtitles.goldendrum",
     "sounds": [
       {
-        "name": "flintnpowder:golden_drum",
+        "name": "kubejs:golden_drum",
         "stream": false
       }
     ]
@@ -196,7 +196,7 @@
     "subtitle": "subtitles.netheritedrumcymbals",
     "sounds": [
       {
-        "name": "flintnpowder:netherite_drum_cymbals",
+        "name": "kubejs:netherite_drum_cymbals",
         "stream": false
       }
     ]
@@ -205,7 +205,7 @@
     "subtitle": "subtitles.netheritegong",
     "sounds": [
       {
-        "name": "flintnpowder:netherite_drum_gong",
+        "name": "kubejs:netherite_drum_gong",
         "stream": false
       }
     ]
@@ -214,7 +214,7 @@
     "subtitle": "subtitles.shotgunshell",
     "sounds": [
       {
-        "name": "flintnpowder:shotgun_reload",
+        "name": "kubejs:shotgun_reload",
         "stream": false
       }
     ]
@@ -222,7 +222,7 @@
   "shotgunpumpbackward": {
     "sounds": [
       {
-        "name": "flintnpowder:shotgunpumpbackward",
+        "name": "kubejs:shotgunpumpbackward",
         "stream": false
       }
     ]
@@ -231,7 +231,7 @@
     "subtitle": "subtitles.shotgunpumpforward",
     "sounds": [
       {
-        "name": "flintnpowder:shotgunpumpforward",
+        "name": "kubejs:shotgunpumpforward",
         "stream": false
       }
     ]
@@ -240,7 +240,7 @@
     "subtitle": "subtitles.rifleround",
     "sounds": [
       {
-        "name": "flintnpowder:rifle_reloading",
+        "name": "kubejs:rifle_reloading",
         "stream": false
       }
     ]
@@ -249,7 +249,7 @@
     "subtitle": "subtitles.rifleboltbackward",
     "sounds": [
       {
-        "name": "flintnpowder:rifleboltbackward",
+        "name": "kubejs:rifleboltbackward",
         "stream": false
       }
     ]
@@ -258,7 +258,7 @@
     "subtitle": "subtitles.rifleboltforward",
     "sounds": [
       {
-        "name": "flintnpowder:rifleboltforward",
+        "name": "kubejs:rifleboltforward",
         "stream": false
       }
     ]
@@ -267,7 +267,7 @@
     "subtitle": "subtitles.pistolmagin",
     "sounds": [
       {
-        "name": "flintnpowder:pistolmagin",
+        "name": "kubejs:pistolmagin",
         "stream": false
       }
     ]
@@ -276,7 +276,7 @@
     "subtitle": "subtitles.pistolcockbackward",
     "sounds": [
       {
-        "name": "flintnpowder:pistolcockbackwards",
+        "name": "kubejs:pistolcockbackwards",
         "stream": false
       }
     ]
@@ -285,7 +285,7 @@
     "subtitle": "subtitles.pistolcockforward",
     "sounds": [
       {
-        "name": "flintnpowder:pistolcockforward",
+        "name": "kubejs:pistolcockforward",
         "stream": false
       }
     ]
@@ -294,7 +294,7 @@
     "subtitle": "subtitles.smgfire",
     "sounds": [
       {
-        "name": "flintnpowder:smgfire",
+        "name": "kubejs:smgfire",
         "stream": false
       }
     ]
@@ -303,7 +303,7 @@
     "subtitle": "subtitles.riflemagout",
     "sounds": [
       {
-        "name": "flintnpowder:armagout",
+        "name": "kubejs:armagout",
         "stream": false
       }
     ]
@@ -312,7 +312,7 @@
     "subtitle": "subtitles.riflecockbackward",
     "sounds": [
       {
-        "name": "flintnpowder:arcockbackwards",
+        "name": "kubejs:arcockbackwards",
         "stream": false
       }
     ]
@@ -321,7 +321,7 @@
     "subtitle": "subtitles.riflecockforward",
     "sounds": [
       {
-        "name": "flintnpowder:arcockforwards",
+        "name": "kubejs:arcockforwards",
         "stream": false
       }
     ]
@@ -330,7 +330,7 @@
     "subtitle": "subtitles.battlerifle",
     "sounds": [
       {
-        "name": "flintnpowder:arfire",
+        "name": "kubejs:arfire",
         "stream": false
       }
     ]
@@ -339,35 +339,35 @@
     "subtitle": "subtitles.bullethit",
     "sounds": [
       {
-        "name": "flintnpowder:bullethit1",
+        "name": "kubejs:bullethit1",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit2",
+        "name": "kubejs:bullethit2",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit3",
+        "name": "kubejs:bullethit3",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit4",
+        "name": "kubejs:bullethit4",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit5",
+        "name": "kubejs:bullethit5",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit6",
+        "name": "kubejs:bullethit6",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit7",
+        "name": "kubejs:bullethit7",
         "stream": false
       },
       {
-        "name": "flintnpowder:bullethit8",
+        "name": "kubejs:bullethit8",
         "stream": false
       }
     ]
@@ -376,7 +376,7 @@
     "subtitle": "subtitles.music74",
     "sounds": [
       {
-        "name": "flintnpowder:74",
+        "name": "kubejs:74",
         "stream": false
       }
     ]
@@ -385,23 +385,23 @@
     "subtitle": "subtitles.distantpistolshot",
     "sounds": [
       {
-        "name": "flintnpowder:distantpistolshot",
+        "name": "kubejs:distantpistolshot",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantpistolshot2",
+        "name": "kubejs:distantpistolshot2",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantpistolshot3",
+        "name": "kubejs:distantpistolshot3",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantpistolshot4",
+        "name": "kubejs:distantpistolshot4",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantpistolshot5",
+        "name": "kubejs:distantpistolshot5",
         "stream": false
       }
     ]
@@ -410,15 +410,15 @@
     "subtitle": "subtitles.distantgunshot",
     "sounds": [
       {
-        "name": "flintnpowder:distantgunshot",
+        "name": "kubejs:distantgunshot",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantgunshot2",
+        "name": "kubejs:distantgunshot2",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantgunshot3",
+        "name": "kubejs:distantgunshot3",
         "stream": false
       }
     ]
@@ -427,15 +427,15 @@
     "subtitle": "subtitles.distantgunshotheavy",
     "sounds": [
       {
-        "name": "flintnpowder:distantgunshotheavy",
+        "name": "kubejs:distantgunshotheavy",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantgunshotheavy2",
+        "name": "kubejs:distantgunshotheavy2",
         "stream": false
       },
       {
-        "name": "flintnpowder:distantgunshotheavy3",
+        "name": "kubejs:distantgunshotheavy3",
         "stream": false
       }
     ]
@@ -444,15 +444,15 @@
     "subtitle": "subtitles.autoshotgun",
     "sounds": [
       {
-        "name": "flintnpowder:autoshotgun",
+        "name": "kubejs:autoshotgun",
         "stream": false
       },
       {
-        "name": "flintnpowder:autoshotgun2",
+        "name": "kubejs:autoshotgun2",
         "stream": false
       },
       {
-        "name": "flintnpowder:autoshotgun3",
+        "name": "kubejs:autoshotgun3",
         "stream": false
       }
     ]
@@ -461,7 +461,7 @@
     "subtitle": "subtitles.autoshotgunmagout",
     "sounds": [
       {
-        "name": "flintnpowder:autoshotgunmagout",
+        "name": "kubejs:autoshotgunmagout",
         "stream": false
       }
     ]
@@ -470,7 +470,7 @@
     "subtitle": "subtitles.shotgunmagin",
     "sounds": [
       {
-        "name": "flintnpowder:autoshotgunmagin",
+        "name": "kubejs:autoshotgunmagin",
         "stream": false
       }
     ]
@@ -479,7 +479,7 @@
     "subtitle": "subtitles.autoshotgunboltbackward",
     "sounds": [
       {
-        "name": "flintnpowder:autoshotgunboltbackward",
+        "name": "kubejs:autoshotgunboltbackward",
         "stream": false
       }
     ]
@@ -488,7 +488,7 @@
     "subtitle": "subtitles.autoshotgunboltforward",
     "sounds": [
       {
-        "name": "flintnpowder:autoshotgunboltforward",
+        "name": "kubejs:autoshotgunboltforward",
         "stream": false
       }
     ]
@@ -497,11 +497,11 @@
     "subtitle": "subtitles.blunderbuss",
     "sounds": [
       {
-        "name": "flintnpowder:blunderbuss2",
+        "name": "kubejs:blunderbuss2",
         "stream": false
       },
       {
-        "name": "flintnpowder:blunderbuss",
+        "name": "kubejs:blunderbuss",
         "stream": false
       }
     ]
@@ -510,7 +510,7 @@
     "subtitle": "subtitles.dryfire",
     "sounds": [
       {
-        "name": "flintnpowder:dryfire",
+        "name": "kubejs:dryfire",
         "stream": false
       }
     ]
@@ -519,15 +519,15 @@
     "subtitle": "subtitles.rifle",
     "sounds": [
       {
-        "name": "flintnpowder:riflefire1",
+        "name": "kubejs:riflefire1",
         "stream": false
       },
       {
-        "name": "flintnpowder:riflefire2",
+        "name": "kubejs:riflefire2",
         "stream": false
       },
       {
-        "name": "flintnpowder:riflefire3",
+        "name": "kubejs:riflefire3",
         "stream": false
       }
     ]

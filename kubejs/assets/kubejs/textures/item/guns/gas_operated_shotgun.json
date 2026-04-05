@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [48, 16],
 	"textures": {
-		"0": "flintnpowder:item/gasshotgun",
-		"particle": "flintnpowder:item/gasshotgun"
+		"0": "flintnpowder:item/gasshotgun"
 	},
 	"elements": [
 		{
@@ -191,10 +190,6 @@
 				"down": {"uv": [11.66667, 15, 13.33333, 8], "rotation": 90, "texture": "#0"}
 			}
 		}
-	],
-	"overrides": [
-		{"predicate": {"flintnpowder:gas_operated_shotgun_unloaded": 1}, "model": "flintnpowder:item/gas_operated_shotgun_0"},
-		{"predicate": {"flintnpowder:gas_operated_shotgun_priming": 1}, "model": "flintnpowder:item/gas_operated_shotgun_1"}
 	],
 	"display": {
 		"thirdperson_righthand": {

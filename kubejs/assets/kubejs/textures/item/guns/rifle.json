@@ -3,8 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [43, 18],
 	"textures": {
-		"0": "flintnpowder:item/rifle",
-		"particle": "flintnpowder:item/rifle"
+		"0": "flintnpowder:item/rifle"
 	},
 	"elements": [
 		{
@@ -179,9 +178,6 @@
 				"down": {"uv": [0, 0, 0, 1.77778], "texture": "#0"}
 			}
 		}
-	],
-	"overrides": [
-		{"predicate": {"flintnpowder:rifle_primed": 1}, "model": "flintnpowder:item/rifle_0"}
 	],
 	"display": {
 		"thirdperson_righthand": {

@@ -1,141 +1,141 @@
-# Мета-данные, не модифицировать.
+# Metadata, do not modify.
 # Default: 0
 configVersion = 2
 
 [general]
 
-	# Переключает все функции мода.
+	# Toggles all of the mod's features.
 	# Default: true
 	enabled = true
-	# Отключите это, чтобы эффекты мода были доступны только для вида от первого лица.
+	# Disable this to make the mod's effects exclusive to first-person view.
 	# Default: true
 	enableInThirdPerson = true
-	# Чувствительность крена камеры, вызванного поворотом по горизонтали.
+	# Sensitivity of the camera roll rotation caused by turning around horizontally.
 	# Default: 1.0
 	turningRollAccumulation = 1.0
-	# Максимальная сила крена камеры, вызванного поворотом по горизонтали.
+	# Maximum strength of the camera roll rotation caused by turning around horizontally.
 	# Default: 1.25
 	turningRollIntensity = 1.25
-	# Плавность затухания крена камеры, вызванного поворотом по горизонтали.
+	# Smoothness of the decay of the camera roll rotation caused by turning around horizontally.
 	# Default: 1.0
 	turningRollSmoothing = 1.0
-	# Сила плавного случайного раскачивания, которое срабатывает, когда игрок бездействует достаточно долго.
+	# Strength of smooth random sway that kicks in when the player idles for enough time.
 	# Default: 0.6
 	cameraSwayIntensity = 0.6
-	# Частота плавного случайного раскачивания, которое срабатывает, когда игрок бездействует достаточно долго.
+	# Frequency of smooth random sway that kicks in when the player idles for enough time.
 	# Default: 0.16
 	cameraSwayFrequency = 0.16
-	# Время, которое игрок должен провести в бездействии, прежде чем плавное случайное раскачивание начнёт появляться.
+	# Amount of time that the player must idle for before smooth random sway starts to fade-in.
 	# Default: 0.15
 	cameraSwayFadeInDelay = 0.15
-	# Время, необходимое для появления плавного случайного раскачивания после того, как игрок бездействует достаточно долго.
+	# Amount of time it takes for smooth random sway to fade-in after the player idles for enough time.
 	# Default: 5.0
 	cameraSwayFadeInLength = 5.0
-	# Время, необходимое для исчезновения плавного случайного раскачивания, когда игрок начинает двигаться после бездействия.
+	# Amount of time it takes for smooth random sway to fade-out when the player starts moving after idling.
 	# Default: 0.75
 	cameraSwayFadeOutLength = 0.75
-	# Максимальная сила всех эффектов тряски экрана.
+	# Maximum strength of all screen shaking effects.
 	# Default: 2.5
 	screenShakesMaxIntensity = 2.5
-	# Скорость, с которой меняется направление или колебания тряски экрана.
+	# Speed at which screen shaking rotations change direction or oscillate.
 	# Default: 6.0
 	screenShakesMaxFrequency = 6.0
-	# Значение [0..1], связанное с силой тряски экрана, вызванной взрывами.
+	# A [0..1] value linked to the strength of screen shaking caused by explosions.
 	# Default: 1.0
 	explosionTrauma = 1.0
-	# Значение [0..1], связанное с силой тряски экрана, вызванной громом от удара молнии.
+	# A [0..1] value linked to the strength of screen shaking caused by lightning bolt-tied thunder.
 	# Default: 0.05
 	thunderTrauma = 0.05
-	# Значение [0..1], связанное с силой тряски экрана, вызванной любыми действиями, при которых игрок размахивает рукой. Рекомендуется оставлять очень низким.
+	# A [0..1] value linked to the strength of screen shaking caused by any actions that swing the player's arm. Best kept very low.
 	# Default: 0.03
 	handSwingTrauma = 0.03
 
 [walking]
 
-	# Сила крена камеры, вызванной боковым движением или боковой горизонтальной скоростью.
+	# Strength of the camera roll rotation caused by strafing, or sideway horizontal velocity.
 	# Default: 10.0
 	strafingRollFactor = 10.0
-	# Интенсивность угловых поворотов камеры, вызванных движением вперёд или назад.
+	# Strength of camera pitch rotations caused by moving forward or backwards.
 	# Default: 7.0
 	forwardVelocityPitchFactor = 7.0
-	# Интенсивность угловых поворотов камеры, вызванных вертикальной скоростью.
+	# Strength of camera pitch rotations caused by vertical velocity.
 	# Default: 2.5
 	verticalVelocityPitchFactor = 2.5
-	# Плавность поворота камеры по углу наклона и крену, вызванная горизонтальным перемещением.
+	# Smoothness of camera pitch & roll rotations caused by moving horizontally.
 	# Default: 1.0
 	horizontalVelocitySmoothingFactor = 1.0
-	# Плавность изменения угла наклона камеры, вызванная вертикальным перемещением.
+	# Smoothness of camera pitch rotations caused by moving vertically.
 	# Default: 1.0
 	verticalVelocitySmoothingFactor = 1.0
 
 [swimming]
 
-	# Сила крена камеры, вызванной боковым движением или боковой горизонтальной скоростью.
+	# Strength of the camera roll rotation caused by strafing, or sideway horizontal velocity.
 	# Default: -30.0
 	strafingRollFactor = -30.0
-	# Интенсивность угловых поворотов камеры, вызванных движением вперёд или назад.
+	# Strength of camera pitch rotations caused by moving forward or backwards.
 	# Default: 21.0
 	forwardVelocityPitchFactor = 21.0
-	# Интенсивность угловых поворотов камеры, вызванных вертикальной скоростью.
+	# Strength of camera pitch rotations caused by vertical velocity.
 	# Default: 7.5
 	verticalVelocityPitchFactor = 7.5
-	# Плавность поворота камеры по углу наклона и крену, вызванная горизонтальным перемещением.
+	# Smoothness of camera pitch & roll rotations caused by moving horizontally.
 	# Default: 1.0
 	horizontalVelocitySmoothingFactor = 1.0
-	# Плавность изменения угла наклона камеры, вызванная вертикальным перемещением.
+	# Smoothness of camera pitch rotations caused by moving vertically.
 	# Default: 1.0
 	verticalVelocitySmoothingFactor = 1.0
 
 [flying]
 
-	# Сила крена камеры, вызванной боковым движением или боковой горизонтальной скоростью.
+	# Strength of the camera roll rotation caused by strafing, or sideway horizontal velocity.
 	# Default: -10.0
 	strafingRollFactor = -10.0
-	# Интенсивность угловых поворотов камеры, вызванных движением вперёд или назад.
+	# Strength of camera pitch rotations caused by moving forward or backwards.
 	# Default: 7.0
 	forwardVelocityPitchFactor = 7.0
-	# Интенсивность угловых поворотов камеры, вызванных вертикальной скоростью.
+	# Strength of camera pitch rotations caused by vertical velocity.
 	# Default: 2.5
 	verticalVelocityPitchFactor = 2.5
-	# Плавность поворота камеры по углу наклона и крену, вызванная горизонтальным перемещением.
+	# Smoothness of camera pitch & roll rotations caused by moving horizontally.
 	# Default: 1.0
 	horizontalVelocitySmoothingFactor = 1.0
-	# Плавность изменения угла наклона камеры, вызванная вертикальным перемещением.
+	# Smoothness of camera pitch rotations caused by moving vertically.
 	# Default: 1.0
 	verticalVelocitySmoothingFactor = 1.0
 
 [mounts]
 
-	# Сила крена камеры, вызванной боковым движением или боковой горизонтальной скоростью.
+	# Strength of the camera roll rotation caused by strafing, or sideway horizontal velocity.
 	# Default: 20.0
 	strafingRollFactor = 20.0
-	# Интенсивность угловых поворотов камеры, вызванных движением вперёд или назад.
+	# Strength of camera pitch rotations caused by moving forward or backwards.
 	# Default: 7.0
 	forwardVelocityPitchFactor = 7.0
-	# Интенсивность угловых поворотов камеры, вызванных вертикальной скоростью.
+	# Strength of camera pitch rotations caused by vertical velocity.
 	# Default: 2.5
 	verticalVelocityPitchFactor = 2.5
-	# Плавность поворота камеры по углу наклона и крену, вызванная горизонтальным перемещением.
+	# Smoothness of camera pitch & roll rotations caused by moving horizontally.
 	# Default: 1.0
 	horizontalVelocitySmoothingFactor = 1.0
-	# Плавность изменения угла наклона камеры, вызванная вертикальным перемещением.
+	# Smoothness of camera pitch rotations caused by moving vertically.
 	# Default: 1.0
 	verticalVelocitySmoothingFactor = 1.0
 
 [vehicles]
 
-	# Сила крена камеры, вызванной боковым движением или боковой горизонтальной скоростью.
+	# Strength of the camera roll rotation caused by strafing, or sideway horizontal velocity.
 	# Default: 5.0
 	strafingRollFactor = 5.0
-	# Интенсивность угловых поворотов камеры, вызванных движением вперёд или назад.
+	# Strength of camera pitch rotations caused by moving forward or backwards.
 	# Default: 1.75
 	forwardVelocityPitchFactor = 1.75
-	# Интенсивность угловых поворотов камеры, вызванных вертикальной скоростью.
+	# Strength of camera pitch rotations caused by vertical velocity.
 	# Default: 5.0
 	verticalVelocityPitchFactor = 5.0
-	# Плавность поворота камеры по углу наклона и крену, вызванная горизонтальным перемещением.
+	# Smoothness of camera pitch & roll rotations caused by moving horizontally.
 	# Default: 1.0
 	horizontalVelocitySmoothingFactor = 1.0
-	# Плавность изменения угла наклона камеры, вызванная вертикальным перемещением.
+	# Smoothness of camera pitch rotations caused by moving vertically.
 	# Default: 1.0
 	verticalVelocitySmoothingFactor = 1.0

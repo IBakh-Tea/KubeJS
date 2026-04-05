@@ -57,9 +57,6 @@
 			}
 		}
 	],
-	"overrides": [
-		{"predicate": {"flintnpowder:flinter_ready": 1}, "model": "flintnpowder:item/flinter_0"}
-	],
 	"display": {
 		"thirdperson_righthand": {
 			"translation": [0, 2, 2]
