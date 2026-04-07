@@ -291,7 +291,7 @@ const GunActions = {
     GunUtils.updateData(item, (data) => {
       if (!data.internalStorage) {
         data.internalStorage = [];
-        data.magazine = config.magazine.standard;
+        data.magazine = config.magazine[0];
         if (Object.keys(config.muzzle ?? {}).length > 0)
           data.muzzle = "minecraft:air";
         if (Object.keys(config.underbarrel ?? {}).length > 0)

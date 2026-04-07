@@ -1,20 +1,6 @@
 StartupEvents.registry("item", (e) => {
-  const heightTierWeapons = [
-      "scythe",
-      "greatsword",
-      "sickle",
-      "claw",
-      "twinblade",
-    ],
-    lowTierMaterial = ["bone", "flint", "copper"];
-
   global.meleeWeaponTypes.forEach((weapon) => {
     global.baseMaterials.forEach((main) => {
-      if (
-        heightTierWeapons.includes(weapon.type) &&
-        lowTierMaterial.includes(main.material)
-      )
-        return;
       e.create(`${main.material}_${weapon.type}`, "sword")
         .translationKey("str")
         .parentModel(`kubejs:item/${weapon.type}`)
@@ -33,7 +19,7 @@ StartupEvents.registry("item", (e) => {
                 ? global.handleMaterials[handleMaterial].color
                 : global.handleMaterials[0].color;
             case 1:
-              return main.color;
+              return "#FFFFFF";
           }
         })
         .tier(main.material)
@@ -60,7 +46,7 @@ StartupEvents.registry("item", (e) => {
             else
               return handleMaterial
                 ? global.handleMaterials[handleMaterial].color
-                : global.stringMaterials.color;
+                : "#CCCCCC";
           case 1:
             return handleMaterial
               ? global.handleMaterials[handleMaterial].color
@@ -68,7 +54,7 @@ StartupEvents.registry("item", (e) => {
           case 2:
             return "#FFFFFF";
           case 3:
-            return global.stringMaterials.color;
+            return "#CCCCCC";
         }
       })
       .tag("c:enchantables")
@@ -87,7 +73,7 @@ StartupEvents.registry("item", (e) => {
 
             if (player.getProjectile(crossbow).empty && player.xp > 10) {
               player.setXp(player.xp - 10);
-              player.give("minecraft:arrow");
+              player.addItem("minecraft:arrow");
             }
           });
         });
@@ -95,19 +81,14 @@ StartupEvents.registry("item", (e) => {
     } else {
       item.bow((bow) => {
         bow.onUse((use) => {
-          use
-            .pull((e) => {
-              const { player, bow } = e;
+          use.pull((e) => {
+            const { player, bow } = e;
 
-              if (player.getProjectile(bow).empty && player.xp > 10) {
-                player.setXp(player.xp - 10);
-                player.give("minecraft:arrow");
-              }
-            })
-            .release((e) => {
-              const { player, arrow } = e;
-              console.log(arrow);
-            });
+            if (player.getProjectile(bow).empty && player.xp > 10) {
+              player.setXp(player.xp - 10);
+              player.addItem("minecraft:arrow");
+            }
+          });
         });
       });
     }

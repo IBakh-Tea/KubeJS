@@ -1,0 +1,22 @@
+{
+  "key": {
+    "A": {
+      "ingredient": {
+        "tag": "minecraft:wooden_slabs"
+      },
+      "block_type": "minecraft:wood_type",
+      "from": "minecraft:oak",
+      "to": "quark:blossom",
+      "type": "moonlight:block_type_swap"
+    }
+  },
+  "pattern": [
+    "AAA"
+  ],
+  "result": {
+    "id": "suppsquared:quark/item_shelf_blossom",
+    "count": 2
+  },
+  "category": "misc",
+  "type": "minecraft:crafting_shaped"
+}
