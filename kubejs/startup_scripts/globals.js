@@ -2,6 +2,7 @@ const SoundSource = Java.loadClass("net.minecraft.sounds.SoundSource");
 const BuiltInRegistries = Java.loadClass(
   "net.minecraft.core.registries.BuiltInRegistries",
 );
+const ClipContext = Java.loadClass("net.minecraft.world.level.ClipContext");
 
 global.meleeWeaponTypes = [
   { type: "sword", baseDamage: 3, baseSpeed: -2.4 },
@@ -46,10 +47,10 @@ global.rangeWeaponsTypes = [
   { type: "crossbow" },
 ];
 
-global.firearmWeaponsTypes = [
-  { type: "pistol" },
-  { type: "musket" },
-  { type: "blunderbuss" },
+global.flintlockWeaponsTypes = [
+  { type: "pistol", damage: 1 },
+  { type: "musket", damage: 1.5 },
+  { type: "blunderbuss", damage: 1 },
 ];
 
 global.handleMaterials = [
@@ -70,17 +71,4 @@ global.baseMaterials = [{ material: "iron" }, { material: "netherite" }];
 
 global.capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
-};
-
-global.playSound = (level, player, sound) => {
-  level.playSound(
-    null,
-    player.x,
-    player.y,
-    player.z,
-    BuiltInRegistries.SOUND_EVENT.get(sound),
-    "PLAYERS",
-    1.0,
-    1.0,
-  );
 };

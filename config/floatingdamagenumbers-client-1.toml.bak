@@ -103,6 +103,7 @@ round_damage_values = false
 		"allurement:shockwave" = "GOLD"
 		"supplementaries:player_bomb_explosion" = "GOLD"
 		"supplementaries:bomb_explosion" = "GOLD"
+		"amendments:boiling" = "GOLD"
 
 		[color.damage."parcool:parcool"]
 			wall_slide = "GOLD"

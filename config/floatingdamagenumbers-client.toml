@@ -104,6 +104,16 @@ round_damage_values = false
 		"supplementaries:player_bomb_explosion" = "GOLD"
 		"supplementaries:bomb_explosion" = "GOLD"
 		"amendments:boiling" = "GOLD"
+		"createcybernetics:davids_demise" = "GOLD"
+		"createcybernetics:missing_skin" = "GOLD"
+		"createcybernetics:surgery" = "GOLD"
+		"createcybernetics:missing_lungs" = "GOLD"
+		"createcybernetics:brain_damage" = "GOLD"
+		"createcybernetics:cyberware_rejection" = "GOLD"
+		"createcybernetics:liver_failure" = "GOLD"
+		"createcybernetics:missing_muscle" = "GOLD"
+		"createcybernetics:boneless" = "GOLD"
+		"createcybernetics:heart_attack" = "GOLD"
 
 		[color.damage."parcool:parcool"]
 			wall_slide = "GOLD"

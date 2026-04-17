@@ -1,57 +1,25 @@
 StartupEvents.registry("item", (e) => {
   [
-    "pistol_round",
-    "rifle_round",
-    "shotgun_shell",
-    "copper_roundshot",
-    "iron_roundshot",
-  ].forEach((bullet) => {
-    e.create(bullet).texture("layer0", `kubejs:item/ammo/${bullet}`);
-  });
-
-  [
-    { type: "standard_handgun_magazine", clip: 12 },
-    { type: "large_handgun_magazine", clip: 24 },
-    { type: "standard_assault_rifle_magazine", clip: 50 },
-    { type: "drum_assault_rifle_magazine", clip: 100 },
-  ].forEach((mag) => {
-    e.create(mag.type)
-      .texture("layer0", `kubejs:item/mags/${mag.type}`)
-      .texture("layer1", `kubejs:item/mags/${mag.type}_loaded`)
-      .color((item, index) => {
-        let internalStorage = item.customData.internalStorage;
-
-        switch (index) {
-          case 0:
-            return "#FFFFFF";
-          case 1:
-            if (internalStorage)
-              if (internalStorage.length == mag.clip) return "#FFFFFF";
-              else return;
-        }
-      })
-      .barWidth((item) => {
-        const internalStorage = item.customData.internalStorage;
-        return internalStorage ? (internalStorage.length / mag.clip) * 13 : 0;
-      })
-      .barColor(() => Color.WHITE)
-      .unstackable();
-  });
-
-  e.create("ramrod").texture("layer0", "kubejs:item/ramrod");
-
-  [
-    "handgun_silencer",
-    "handgun_muzzle_brake",
-    "assault_rifle_grip",
-    "assault_rifle_handguard",
-    "assault_rifle_stock",
-    "assault_rifle_muzzle_brake",
-    "assault_rifle_silencer",
-  ].forEach((attachment) => {
-    e.create(attachment).texture(
-      "layer0",
-      `kubejs:item/attachments/${attachment}`,
-    );
+    ["bounce", "<bounce a=4 f=1.8 w=0.2>BOING!"],
+    ["fade", "<fade a=0.2 f=1.5 w=0.1>Fading Text"],
+    ["glitch", "<glitch f=3 j=0.02 b=0.01 s=0.1>ERROR"],
+    ["grad", "<grad from=#7FFFD4 to=#1E90FF hue uni>Flowing Gradient Text"],
+    ["neon", "<neon p=8 r=2 a=0.15>Neon Glow"],
+    ["pend", "<pend f=1.0 a=30 r=2>Swinging Around"],
+    ["pulse", "<pulse base=0.6 a=0.4 f=1.5>Power Rising"],
+    ["rainb", "<rainb f=1 w=0.5>Colorful Text!"],
+    [
+      "shadow",
+      "<shadow a=0>No Shadow</shadow> <shadow r=1 a=0.6>Shadowed Text",
+    ],
+    ["shake", "<shake a=2 f=3>WARNING!"],
+    ["swing", "<swing a=0.5 f=1.8>Waving Text"],
+    ["turb", "<turb a=2 f=1.5>Windy Text"],
+    ["wave", "<wave a=1 f=1.0 w=0.5>Flowing Text"],
+    ["wiggle", "<wiggle a=1 f=2>Wiggly Text!"],
+  ].forEach((effect) => {
+    e.create(`${effect[0]}_stick`)
+      .displayName(effect[1])
+      .texture("minecraft:item/stick");
   });
 });

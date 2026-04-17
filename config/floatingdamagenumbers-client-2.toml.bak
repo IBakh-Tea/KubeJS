@@ -94,6 +94,15 @@ round_damage_values = false
 		"minecraft:fly_into_wall" = "GOLD"
 		"power_armor:ground_pound" = "GOLD"
 		"quark:pickarang" = "GOLD"
+		"supplementaries:slingshot" = "GOLD"
+		"supplementaries:cannonball" = "GOLD"
+		"supplementaries:player_cannonball" = "GOLD"
+		"neapolitan:beanstalk_thorns" = "GOLD"
+		"supplementaries:bamboo_spikes" = "GOLD"
+		"supplementaries:xp_extracting" = "GOLD"
+		"allurement:shockwave" = "GOLD"
+		"supplementaries:player_bomb_explosion" = "GOLD"
+		"supplementaries:bomb_explosion" = "GOLD"
 
 		[color.damage."parcool:parcool"]
 			wall_slide = "GOLD"

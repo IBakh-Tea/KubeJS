@@ -93,5 +93,8 @@ round_damage_values = false
 		"minecraft:falling_stalactite" = "GOLD"
 		"minecraft:fly_into_wall" = "GOLD"
 
+		[color.damage."parcool:parcool"]
+			wall_slide = "GOLD"
+
 	[color.heal]
 		default = "DARK_GREEN"
