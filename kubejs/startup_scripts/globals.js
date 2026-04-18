@@ -1,9 +1,3 @@
-const SoundSource = Java.loadClass("net.minecraft.sounds.SoundSource");
-const BuiltInRegistries = Java.loadClass(
-  "net.minecraft.core.registries.BuiltInRegistries",
-);
-const ClipContext = Java.loadClass("net.minecraft.world.level.ClipContext");
-
 global.meleeWeaponTypes = [
   { type: "sword", baseDamage: 3, baseSpeed: -2.4 },
   { type: "axe", baseDamage: 6, baseSpeed: -2.6 },
