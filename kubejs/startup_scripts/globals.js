@@ -66,3 +66,15 @@ global.baseMaterials = [{ material: "iron" }, { material: "netherite" }];
 global.capitalizeFirstLetter = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
+global.pullCrossbow = (e) => {};
+global.pullTickCrossbow = (e) => {};
+global.shootCrossbow = (e) => {
+  console.log(e.getArrow());
+};
+
+global.pullBow = (e) => {};
+global.pullTickBow = (e) => {};
+global.releaseBow = (e) => {
+  console.log(e.getArrow());
+};

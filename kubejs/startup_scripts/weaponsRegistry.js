@@ -104,4 +104,28 @@ StartupEvents.registry("item", (e) => {
         );
       });
   });
+
+  e.create("test_crossbow", "crossbow")
+    .translationKey("str")
+    .unstackable()
+    .crossbow((crossbow) =>
+      crossbow.onUse((use) => {
+        use
+          .pull((e) => global.pullCrossbow(e))
+          .pullTick((e) => global.pullTickCrossbow(e))
+          .shoot((e) => global.shootCrossbow(e));
+      }),
+    );
+
+  e.create("test_bow", "bow")
+    .translationKey("str")
+    .unstackable()
+    .bow((bow) =>
+      bow.onUse((use) => {
+        use
+          .pull((e) => global.pullBow(e))
+          .pullTick((e) => global.pullTickBow(e))
+          .release((e) => global.releaseBow(e));
+      }),
+    );
 });
