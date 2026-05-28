@@ -263,6 +263,10 @@ ItemEvents.rightClicked((e) => {
   }
 });
 
+EntityEvents.spawned("minecraft:arrow", (e) => {
+  e.entity.setCritArrow(false);
+});
+
 ItemEvents.rightClicked("minecraft:rotten_flesh", (e) => {
   const { player, level, server } = e;
 

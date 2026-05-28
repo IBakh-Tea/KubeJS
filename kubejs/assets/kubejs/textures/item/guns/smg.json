@@ -3,7 +3,7 @@
   "credit": "Made with Blockbench",
   "texture_size": [32, 13],
   "textures": {
-    "0": "flintnpowder:item/smg"
+    "0": "kubejs:item/smg/smg"
   },
   "elements": [
     {

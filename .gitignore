@@ -222,8 +222,13 @@ immersive_library/
 dynamic-resource-pack-cache/
 patchouli_books/
 crash-reports/
-floatingdamagenumbers/
+floatingdamagenumbers/*
 datapacks/
+dynamic-data-pack-cache/*
+dynamic-resource-pack-cache/
+config/*
+moonlight-global-datapacks/*
+resourcepacks/
 
 command_history.txt
 icon.png

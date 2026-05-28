@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [43, 18],
 	"textures": {
-		"0": "flintnpowder:item/trapdoorrifle"
+		"0": "kubejs:item/trapdoor_rifle/trapdoor_rifle"
 	},
 	"elements": [
 		{
