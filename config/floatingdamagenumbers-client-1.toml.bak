@@ -92,6 +92,7 @@ round_damage_values = false
 		"minecraft:out_of_world" = "GOLD"
 		"minecraft:falling_stalactite" = "GOLD"
 		"minecraft:fly_into_wall" = "GOLD"
+		"power_armor:ground_pound" = "GOLD"
 
 		[color.damage."parcool:parcool"]
 			wall_slide = "GOLD"

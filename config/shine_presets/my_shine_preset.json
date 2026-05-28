@@ -1,0 +1,1088 @@
+{
+  "schema": "shine-preset-v1",
+  "name": "My Shine Preset",
+  "description": "",
+  "bloom": {
+    "enabled": true,
+    "strength": 8.0,
+    "threshold": 0.15,
+    "radius": 500.0,
+    "radiusScaleVersion": 2,
+    "blurPassCount": 2,
+    "bloomDistance": 256.0,
+    "distanceStability": 0.3,
+    "highlightClamp": 0.28,
+    "softKnee": 0.2,
+    "defaultLightSourceStrength": 50.0,
+    "defaultNonLightStrength": 0.0,
+    "defaultEntityTextureStrength": 0.0,
+    "defaultParticleStrength": 0.0,
+    "sourceStrengthOverrides": {
+      "minecraft:water": 0.0,
+      "minecraft:flowing_water": 0.0,
+      "minecraft:sculk": 500.0,
+      "minecraft:sculk_vein": 150.0,
+      "minecraft:amethyst_cluster": 100.0,
+      "minecraft:large_amethyst_bud": 100.0,
+      "minecraft:medium_amethyst_bud": 100.0,
+      "minecraft:small_amethyst_bud": 100.0,
+      "minecraft:glow_lichen": 400.0,
+      "minecraft:warped_stem": 100.0,
+      "minecraft:warped_fungus": 300.0,
+      "minecraft:nether_portal": 75.0,
+      "minecraft:crimson_stem": 175.0,
+      "minecraft:twisting_vines": 25.0,
+      "minecraft:twisting_vines_plant": 25.0,
+      "minecraft:weeping_vines": 75.0,
+      "minecraft:lava": 75.0,
+      "minecraft:flowing_lava": 75.0,
+      "minecraft:crimson_fungus": 150.0,
+      "minecraft:nether_wart": 50.0,
+      "minecraft:crying_obsidian": 75.0,
+      "minecraft:closed_eyeblossom": 50.0,
+      "minecraft:open_eyeblossom": 50.0,
+      "minecraft:resin_clump": 150.0,
+      "minecraft:chorus_flower": 150.0,
+      "minecraft:powder_snow": 25.0,
+      "minecraft:snow": 25.0,
+      "minecraft:snow_block": 25.0,
+      "minecraft:soul_torch": 220.0,
+      "minecraft:soul_wall_torch": 220.0,
+      "minecraft:redstone_torch": 120.0,
+      "minecraft:redstone_wall_torch": 120.0,
+      "minecraft:torch": 499.0,
+      "minecraft:wall_torch": 499.0,
+      "minecraft:firefly_bush": 500.0,
+      "minecraft:lantern": 200.0,
+      "minecraft:weeping_vines_plant": 100.0,
+      "minecraft:nether_gold_ore": 50.0,
+      "minecraft:soul_fire": 250.0,
+      "minecraft:soul_campfire": 0.0,
+      "minecraft:smoker": 0.0,
+      "minecraft:blast_furnace": 0.0,
+      "minecraft:furnace": 0.0
+    },
+    "entityTextureStrengthOverrides": {
+      "minecraft:textures/entity/enderman/enderman_eyes.png": 428.0,
+      "minecraft:textures/entity/spider_eyes.png": 244.0,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_2_e.png": 200.0,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_2.png": 200.0,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_1_e.png": 200.0,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_1.png": 200.0,
+      "minecraft:textures/entity/warden/warden_heart_e.png": 300.0,
+      "minecraft:textures/entity/warden/warden_heart.png": 300.0,
+      "minecraft:textures/entity/warden/warden_bioluminescent_layer_e.png": 200.0,
+      "minecraft:textures/entity/warden/warden_bioluminescent_layer.png": 200.0,
+      "minecraft:textures/entity/creaking/creaking_eyes.png": 200.0,
+      "minecraft:textures/entity/end_crystal/end_crystal.png": 150.0,
+      "minecraft:textures/entity/warden/warden.png": 49.0,
+      "minecraft:textures/entity/spider/cave_spider.png": 100.0
+    },
+    "particleStrengthOverrides": {
+      "minecraft:firefly": 500.0,
+      "minecraft:lava": 250.0,
+      "minecraft:dripping_lava": 500.0,
+      "minecraft:falling_lava": 500.0,
+      "minecraft:landing_lava": 500.0,
+      "minecraft:flame": 250.0,
+      "minecraft:crit": 0.0,
+      "minecraft:portal": 500.0,
+      "minecraft:underwater": 300.0,
+      "minecraft:glow": 100.0,
+      "minecraft:glow_squid_ink": 100.0
+    }
+  },
+  "bloomMasks": {
+    "spriteMasks": {
+      "minecraft:block/torch": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/copper_torch": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/firefly_bush": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "minecraft:block/lantern": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/furnace_front": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "minecraft:block/furnace_top": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/furnace_side": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/crimson_stem": {
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "minecraft:block/crimson_stem_top": {
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "minecraft:block/weeping_vines_plant": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "minecraft:block/weeping_vines": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/crimson_fungus": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAmAAYAMAAwAIAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/warped_fungus": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAQBgAGwADAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/warped_stem": {
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "minecraft:block/warped_stem_top": {
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "minecraft:block/nether_gold_ore": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "minecraft:block/water_still": {
+        "width": 16,
+        "height": 16,
+        "bits": "fz3v//nD/v///////7/9/8/v////////f//////nn/w\u003d"
+      },
+      "minecraft:block/open_eyeblossom": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAmBn4H/gf4AcAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:block/glow_lichen": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAhAAAAAAAAAAAEAAAAAAgAAAAAIAAAIAAAAAAA\u003d"
+      },
+      "minecraft:block/deepslate_redstone_ore": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAA4AD4A/AwAAAAAA5+BjgAAAAA+BgwAAAAAAA\u003d"
+      },
+      "minecraft:block/redstone_lamp": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAB4Hnw+fD6+fd577nfwD/AP5mfOc555Pnx8PnAOAAA\u003d"
+      },
+      "minecraft:block/redstone_ore": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAA4AD4A/AwAAAAAA5+BjgAAAAA+BgwAAAAAAA\u003d"
+      },
+      "minecraft:block/campfire_log": {
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      }
+    },
+    "sourceMasks": {
+      "block:minecraft:torch#down": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:torch#up": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:torch#north": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:torch#south": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:torch#west": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:torch#east": {
+        "sourceId": "minecraft:torch",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAgAGAAQAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#down": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#up": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#north": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#south": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#west": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:copper_torch#east": {
+        "sourceId": "minecraft:copper_torch",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/copper_torch",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#down": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#up": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#north": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#south": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#west": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:firefly_bush#east": {
+        "sourceId": "minecraft:firefly_bush",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/firefly_bush",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#down": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#up": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#north": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#south": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#west": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:lantern#east": {
+        "sourceId": "minecraft:lantern",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/lantern",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAeAAAAPwA/AD8APwA/AAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_front#down": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_front#up": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_front#north": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_front#south": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_front#west": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_front#east": {
+        "sourceId": "minecraft:furnace_front",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      },
+      "block:minecraft:furnace_top#down": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_top#up": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_top#north": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_top#south": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_top#west": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_top#east": {
+        "sourceId": "minecraft:furnace_top",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/furnace_top",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#down": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#up": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#north": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#south": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#west": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace_side#east": {
+        "sourceId": "minecraft:furnace_side",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/furnace_side",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:crimson_stem#east": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/crimson_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:crimson_stem#up": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/crimson_stem_top",
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "block:minecraft:crimson_stem#south": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/crimson_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:crimson_stem#west": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/crimson_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:crimson_stem#north": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/crimson_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:crimson_stem#down": {
+        "sourceId": "minecraft:crimson_stem",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/crimson_stem_top",
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "block:minecraft:weeping_vines#down": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines#south": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines#west": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines#up": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#north": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:weeping_vines#north": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines#east": {
+        "sourceId": "minecraft:weeping_vines",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/weeping_vines",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#east": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#down": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#west": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#up": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:weeping_vines_plant#south": {
+        "sourceId": "minecraft:weeping_vines_plant",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/weeping_vines_plant",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAMAZ4BwAAAAAA4GDgAQAAAAAABgAAcAD4GAA4AAA\u003d"
+      },
+      "block:minecraft:crimson_fungus#north": {
+        "sourceId": "minecraft:crimson_fungus",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/crimson_fungus",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAmAAYAMAAwAIAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:warped_fungus#north": {
+        "sourceId": "minecraft:warped_fungus",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/warped_fungus",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAQBgAGwADAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:warped_stem#up": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/warped_stem_top",
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "block:minecraft:warped_stem#down": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/warped_stem_top",
+        "width": 16,
+        "height": 16,
+        "bits": "SCEAAAGAAAAAAAAAAAABgAAAAYAAAAAAAYAAAAAASCE\u003d"
+      },
+      "block:minecraft:warped_stem#south": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/warped_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:warped_stem#east": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/warped_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:warped_stem#north": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/warped_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:warped_stem#west": {
+        "sourceId": "minecraft:warped_stem",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/warped_stem",
+        "width": 16,
+        "height": 16,
+        "bits": "SCFIIYZBCdEQYRBCIiQhGEEQihkGCgEWCRIooSRCRCY\u003d"
+      },
+      "block:minecraft:nether_gold_ore#west": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "west",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:nether_gold_ore#up": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "up",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:nether_gold_ore#east": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "east",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:nether_gold_ore#south": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "south",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:nether_gold_ore#north": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:nether_gold_ore#down": {
+        "sourceId": "minecraft:nether_gold_ore",
+        "fluid": false,
+        "face": "down",
+        "spriteId": "minecraft:block/nether_gold_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAADAEOAwYCBAIABgAG4AAGAAQIIIwgAGAAwACAAA\u003d"
+      },
+      "block:minecraft:water#north": {
+        "sourceId": "minecraft:water",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/water_still",
+        "width": 16,
+        "height": 16,
+        "bits": "fz3v//nD/v///////7/9/8/v////////f//////nn/w\u003d"
+      },
+      "block:minecraft:open_eyeblossom#north": {
+        "sourceId": "minecraft:open_eyeblossom",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/open_eyeblossom",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAmBn4H/gf4AcAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:glow_lichen#north": {
+        "sourceId": "minecraft:glow_lichen",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/glow_lichen",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAhAAAAAAAAAAAEAAAAAAgAAAAAIAAAIAAAAAAA\u003d"
+      },
+      "block:minecraft:deepslate_redstone_ore#north": {
+        "sourceId": "minecraft:deepslate_redstone_ore",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/deepslate_redstone_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAA4AD4A/AwAAAAAA5+BjgAAAAA+BgwAAAAAAA\u003d"
+      },
+      "block:minecraft:redstone_lamp#north": {
+        "sourceId": "minecraft:redstone_lamp",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/redstone_lamp",
+        "width": 16,
+        "height": 16,
+        "bits": "AAB4Hnw+fD6+fd577nfwD/AP5mfOc555Pnx8PnAOAAA\u003d"
+      },
+      "block:minecraft:redstone_ore#north": {
+        "sourceId": "minecraft:redstone_ore",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/redstone_ore",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAA4AD4A/AwAAAAAA5+BjgAAAAA+BgwAAAAAAA\u003d"
+      },
+      "block:minecraft:soul_campfire#north": {
+        "sourceId": "minecraft:soul_campfire",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/campfire_log",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "block:minecraft:furnace#north": {
+        "sourceId": "minecraft:furnace",
+        "fluid": false,
+        "face": "north",
+        "spriteId": "minecraft:block/furnace_front",
+        "width": 16,
+        "height": 16,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAH8A/4H/gfAAA\u003d"
+      }
+    },
+    "entityTextureMasks": {
+      "minecraft:textures/entity/allay/allay.png": {
+        "width": 32,
+        "height": 32,
+        "bits": "////////////////////////////////////////////////////////////////////////////////////////////////////////////////7/////////////////////////////////////////////////////////8\u003d"
+      },
+      "minecraft:textures/entity/end_crystal/end_crystal.png": {
+        "width": 128,
+        "height": 64,
+        "bits": "AAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAA//////////8AAAAAAAAAAP//////////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAP//////////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAP//////////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAP//////////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAP//////////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d\u003d"
+      },
+      "minecraft:textures/entity/warden/warden.png": {
+        "width": 128,
+        "height": 128,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAA+P8DAAAAAAAAAAAAAAAAAPj/AwAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAA+P8DAAAAAAAAAAAAAAAAAPj/AwAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAA+P8DAAAAAAAAAAAAAAAAAPj/AwAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAA+P8DAAAAAAAAAAAAAAAAAPj/AwAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAA+P8DAAAAAAAAAAAAAAAAAPj/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA4P8PAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA4P8PAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA4P8PAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA4P8PAAAAAAAAAAAAAAAAAOD/DwAAAAAAAAAAAAAAAADg/w8AAAAAAAAAAAAAAAAA4P8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d"
+      },
+      "minecraft:textures/entity/spider/cave_spider.png": {
+        "width": 64,
+        "height": 32,
+        "bits": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCAAAAAAAAACQAAAAAAACAgQEAAAAAAIC9AQAAAAAAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u003d\u003d"
+      }
+    }
+  },
+  "rimLight": {
+    "ENABLE_RIM_LIGHT": 0,
+    "RIM_COLOR_INFLUENCE": 1.0,
+    "RIM_THICKNESS": 3.0,
+    "RIM_STRENGTH": 0.5,
+    "RIM_DEPTH_THRESHOLD": 0.1,
+    "RIM_MAX_DISTANCE": 64.0,
+    "blockInclusionOverrides": {
+      "minecraft:grass_block": true
+    }
+  },
+  "shading": {
+    "blockShadingEnabled": true,
+    "cloudShadingEnabled": true,
+    "entityShadingEnabled": true
+  },
+  "coloredLight": {
+    "enabled": false,
+    "scanRadius": 96,
+    "blockLights": {
+      "minecraft:redstone_torch": {
+        "enabled": true,
+        "color": 16718362,
+        "radius": 7.0,
+        "intensity": 0.5
+      },
+      "minecraft:sea_lantern": {
+        "enabled": true,
+        "color": 5636092,
+        "radius": 15.0,
+        "intensity": 0.5
+      },
+      "minecraft:verdant_froglight": {
+        "enabled": true,
+        "color": 10551104,
+        "radius": 15.0,
+        "intensity": 0.25
+      },
+      "minecraft:pearlescent_froglight": {
+        "enabled": true,
+        "color": 16728319,
+        "radius": 15.0,
+        "intensity": 0.25
+      },
+      "minecraft:ochre_froglight": {
+        "enabled": true,
+        "color": 16765517,
+        "radius": 15.0,
+        "intensity": 0.25
+      },
+      "minecraft:shroomlight": {
+        "enabled": true,
+        "color": 16755285,
+        "radius": 15.0,
+        "intensity": 0.5
+      },
+      "minecraft:glow_lichen": {
+        "enabled": true,
+        "color": 15531942,
+        "radius": 7.0,
+        "intensity": 0.5
+      },
+      "minecraft:soul_lantern": {
+        "enabled": true,
+        "color": 5636095,
+        "radius": 10.0,
+        "intensity": 0.75
+      },
+      "minecraft:amethyst_cluster": {
+        "enabled": true,
+        "color": 13992191,
+        "radius": 5.0,
+        "intensity": 1.5
+      },
+      "minecraft:large_amethyst_bud": {
+        "enabled": true,
+        "color": 13926655,
+        "radius": 4.0,
+        "intensity": 1.5
+      },
+      "minecraft:medium_amethyst_bud": {
+        "enabled": true,
+        "color": 13992191,
+        "radius": 2.0,
+        "intensity": 1.5
+      },
+      "minecraft:small_amethyst_bud": {
+        "enabled": true,
+        "color": 13992191,
+        "radius": 1.0,
+        "intensity": 1.5
+      },
+      "minecraft:soul_campfire": {
+        "enabled": true,
+        "color": 5636095,
+        "radius": 10.0,
+        "intensity": 0.75
+      },
+      "minecraft:soul_torch": {
+        "enabled": true,
+        "color": 5636095,
+        "radius": 10.0,
+        "intensity": 0.75
+      },
+      "minecraft:crying_obsidian": {
+        "enabled": true,
+        "color": 8388863,
+        "radius": 10.0,
+        "intensity": 0.1
+      }
+    }
+  }
+}
